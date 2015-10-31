@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="HybridMobileProjectImportWizard">
+		<item value="true" key="HybridProjectImportPage.COPY"/>
+		<list key="HybridProjectImportPage.DIRECTORIES">
+			<item value="/home/slyboots/development/workspace/mobile_workspace/BTSMaintenanceClient"/>
+		</list>
+	</section>
+</section>

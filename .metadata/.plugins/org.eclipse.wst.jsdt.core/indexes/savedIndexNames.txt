@@ -1,0 +1,9 @@
+INDEX VERSION 1.3+/home/slyboots/development/workspace/mobile_workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1753441148.index
+3770730437.index
+1173983945.index
+2340480822.index
+2147075054.index
+402004611.index
+3794994108.index
+1552661645.index
