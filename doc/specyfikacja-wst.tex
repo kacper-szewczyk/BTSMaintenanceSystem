@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+
+\title{Wstępna specyfikacja projektu}
+\date{12 października 2015}
+\newcommand{\tab}[1]{\hspace{.05\textwidth}\rlap{#1}}
+\begin{document}
+
+\maketitle
+
+\section{Skład grupy}
+Grupa składa się z dwóch osób:
+\begin{itemize}
+\item Kacper Szewczyk(PM) 192789
+\item Michał Błach 194127
+\end{itemize}
+\section{Temat projektu}
+\textbf{"Stworzenie systemu dla pracowników z działu utrzymania łączności bezprzewodowej"}
+\section{Wstępny zakres i cele projektu}
+Celem projektu jest stworzenie systemu , który ułatwiałby prace ludziom z działu utrzymania łączności bezprzewodowej.
+
+Aplikacja ta będzie zawierała bazę danych stacji bazowych telefonii komórkowych (BTS-ów),które należą do utrzymania danej firmy.
+
+Użytkownik powinien w łatwy sposób znaleźć szukaną stację po którymś z jej parametrów, jak również mieć możliwość sprawdzenia listy najbliższych stacji korzystając z modułu GPS.
+
+System powinien udostępniać w łatwy sposób dostęp do wszystkich danych stacji, jak również do szybkiej obsługi API operatora.
+
+\section{Specyfikacja wymagań}
+\textbf{Informacje, które będą mogły być przechowywane:}
+\begin{enumerate}
+\item Wewnętrzne id stacji u operatora/operatorów
+\item Nazwa stacji u operatora/operatorów 
+\item Właściciel stacji
+\item Adres stacji
+\item Typ stacji( np wieża , komin ...)
+\item Koordynaty
+\item Wysokość
+\item Opis dostępu
+\item Adres zakładu dostaw nośników energetycznych, który zasila stacje
+\item Nr telefonu zakładu dostaw nośników energetycznych, pod który należy dany obiekt
+\item Imię i nazwisko osoby , która była ostatnio na stacji
+\item Data ostatniej aktywności na stacji
+\end{enumerate}
+
+Program będzie pozwalał wyszukiwać stacje, według dowolnego jej parametru jak również odczytywać obecne położenie telefonu i znajdować najbliższą możliwą.\\
+\textbf{Po odnalezieniu szukanej stacji, użytkownik będzie mógł:}
+\begin{enumerate}
+\item Sprawdzić wszystkie informacje o niej
+\item Wybrać opcje automatycznego włączenia nawigacji w telefonie, która będzie prowadziła go na adres obiektu.
+\item Szybko wybrać numer zakładu dostaw nośników energetycznych, do którego należy dana stacja.
+\end{enumerate}
+\textbf{Również poprzez wysłanie smsa o odpowiedniej treści do operatora użytkownik będzie mógł:}
+\begin{enumerate}
+\item Zgłosić wejście na stacji (wystawić wejściówke)
+\item Zgłosić wyjście ze stacji (zamknąć wejściówke)
+\item Sprawdzić stan alarmów na stacji.
+\end{enumerate}
+
+\textbf{W skład projektu będzie wchodził:}
+\begin{enumerate}
+\item Aplikacja na urządzenia mobilne (platforma Android, WindowsPhone, iOS) napisana we frameworku PhoneGap/Mosync/Corodova.
+\item Dedykowany serwer, który będzie udostępniał API do synchronizacji danych z urządzeniami mobilnymi(*)
+\item Aplikacja webowa, która będzie pozwalała na szybkie dodawanie, edytowanie i usuwania rekordów z bazy danych. Będzie także dawała możliwość ustalenia dyżurów w pracy, jak również zlokalizowanie najbliższego wolnego pracownika od miejsca awarii stacji(*).
+\end{enumerate}
+(*) - opcjonalne
+\section{WBS}
+\section{Harmonogram projektu}
+\begin{figure}[h]
+    %\includegraphics[width=0.5\textwidth]{tomography-principle}
+\end{figure}
+\end{document}
