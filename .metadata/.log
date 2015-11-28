@@ -1,0 +1,16 @@
+!SESSION 2015-11-29 00:19:01.548 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_31
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -data /home/slyboots/development/workspace/mobile_workspace/BTSMaintenanceSystem -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.thym.android.core 2 0 2015-11-29 00:19:41.591
+!MESSAGE Missing Android engine file /home/slyboots/.cordova/lib/android/cordova/3.7.2/framework/cordova-3.7.2.jar
+
+!ENTRY org.eclipse.thym.core 1 0 2015-11-29 00:20:35.568
+!MESSAGE No engine information exists on config.xml. Falling back to default engines
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-11-29 00:20:36.606
+!MESSAGE No valid Android XML Editor Delegate found for file /BTSMaintenanceSystemClient/config.xml [Res null, type null]
