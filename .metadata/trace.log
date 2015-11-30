@@ -1,0 +1,668 @@
+# !SESSION 2015-11-30 17:59:47.093
+# version: 1.1
+# verbose: true
+# The following option strings are specified for this debug session:
+# 	null
+| main | 2015-11-30 17:59:47.093 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Really updating the installed plugin list |
+| main | 2015-11-30 17:59:47.096 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Updated plugin list in 5 ms |
+| main | 2015-11-30 17:59:47.148 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Really updating the installed plugin list |
+| main | 2015-11-30 17:59:47.149 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Updated plugin list in 1 ms |
+| main | 2015-11-30 17:59:47.185 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Really updating the installed plugin list |
+| main | 2015-11-30 17:59:47.187 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Updated plugin list in 2 ms |
+| Worker-3 | 2015-11-30 17:59:48.250 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Really updating the installed plugin list |
+| Worker-3 | 2015-11-30 17:59:48.253 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Updated plugin list in 3 ms |
+| main | 2015-11-30 17:59:48.364 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Completed WidgetModel.getWidgetForEdit it 834ms |
+| Worker-4 | 2015-11-30 17:59:48.413 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Completed WidgetModel.getWidgetForRead it 409ms |
+| main | 2015-11-30 17:59:54.098 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Really updating the installed plugin list |
+| main | 2015-11-30 17:59:54.098 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Updated plugin list in 0 ms |
+| Worker-2 | 2015-11-30 17:59:54.446 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Really updating the installed plugin list |
+| Worker-2 | 2015-11-30 17:59:54.446 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Updated plugin list in 0 ms |
+| main | 2015-11-30 18:01:32.439 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Sync Execute command line: "/home/slyboots/android-sdks/tools/android" list target |
+| main | 2015-11-30 18:01:32.488 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Creating TracingStreamListeners for "/home/slyboots/android-sdks/tools/android" list target |
+| Output Stream Monitor | 2015-11-30 18:01:33.268 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Available Android targets:
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.664 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ----------
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.665 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | id: 1 or "android-21"
+     Name: Android 5.0.1
+     Type: Platform
+     API level: 21
+     Revision: 2
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.666 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WXGA800-7in, AndroidWearRound, AndroidWearSquare, AndroidWearRound, AndroidWearSquare
+ Tag/ABIs : android-tv/armeabi-v7a,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.666 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | android-tv/x86, android-wear/armeabi-v7a,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.667 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | android-wear |
+| Output Stream Monitor | 2015-11-30 18:01:33.667 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | / |
+| Output Stream Monitor | 2015-11-30 18:01:33.668 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | x86 |
+| Output Stream Monitor | 2015-11-30 18:01:33.668 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.669 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | default |
+| Output Stream Monitor | 2015-11-30 18:01:33.669 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | / |
+| Output Stream Monitor | 2015-11-30 18:01:33.669 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | armeabi-v7a |
+| Output Stream Monitor | 2015-11-30 18:01:33.670 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.670 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | default |
+| Output Stream Monitor | 2015-11-30 18:01:33.670 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | / |
+| Output Stream Monitor | 2015-11-30 18:01:33.671 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | x86 |
+| Output Stream Monitor | 2015-11-30 18:01:33.671 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.671 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | default |
+| Output Stream Monitor | 2015-11-30 18:01:33.672 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | / |
+| Output Stream Monitor | 2015-11-30 18:01:33.672 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | x86_64 |
+| Output Stream Monitor | 2015-11-30 18:01:33.672 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.673 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ----------
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.675 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | id:  |
+| Output Stream Monitor | 2015-11-30 18:01:33.675 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 2 |
+| Output Stream Monitor | 2015-11-30 18:01:33.675 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  or " |
+| Output Stream Monitor | 2015-11-30 18:01:33.676 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | android-22 |
+| Output Stream Monitor | 2015-11-30 18:01:33.676 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | "
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.677 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Name:  |
+| Output Stream Monitor | 2015-11-30 18:01:33.677 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Android 5.1.1 |
+| Output Stream Monitor | 2015-11-30 18:01:33.677 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.677 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Type: Platform
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.678 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      API level:  |
+| Output Stream Monitor | 2015-11-30 18:01:33.678 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 22 |
+| Output Stream Monitor | 2015-11-30 18:01:33.678 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.679 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Revision:  |
+| Output Stream Monitor | 2015-11-30 18:01:33.680 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 2
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800 |
+| Output Stream Monitor | 2015-11-30 18:01:33.681 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.681 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WXGA800-7in, AndroidWearRound, AndroidWearRound400x400, AndroidWearRoundChin320x290 |
+| Output Stream Monitor | 2015-11-30 18:01:33.685 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearRoundChin360x325, AndroidWearRoundChin360x330, AndroidWearSquare, AndroidWearSquare320x320, AndroidWearRound, AndroidWearRound400x400, AndroidWearRoundChin320x290, AndroidWearRoundChin360x325, AndroidWearRoundChin360x330, AndroidWearSquare, AndroidWearSquare320x320
+ Tag/ABIs : android-tv/armeabi-v7a, android-tv/x86, android-wear/armeabi-v7a, android-wear/x86, default/armeabi-v7a, default/x86, default/x86_64
+----------
+id: 3 or "android-23"
+     Name: Android 6.0
+     Type: Platform
+     API level: 23
+     Revision: 2
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in, AndroidWearRound, AndroidWearRound360x360, AndroidWearRound400x400, AndroidWearRound480x480, AndroidWearRoundChin320x290, AndroidWearRoundChin360x325, AndroidWearRoundChin360x330, AndroidWearSquare, AndroidWearSquare320x320, AndroidWearRound,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.686 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearRound360x360, AndroidWearRound400x400, AndroidWearRound480x480, AndroidWearRoundChin320x290, AndroidWearRoundChin360x325, AndroidWearRoundChin360x330, AndroidWearSquare, AndroidWearSquare320x320 |
+| Output Stream Monitor | 2015-11-30 18:01:33.686 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ Tag/ABIs : android-tv/armeabi-v7a,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.686 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | android-tv/x86, android-wear/armeabi-v7a |
+| Output Stream Monitor | 2015-11-30 18:01:33.687 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , android-wear/x86, default/ |
+| Output Stream Monitor | 2015-11-30 18:01:33.688 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | armeabi-v7a |
+| Output Stream Monitor | 2015-11-30 18:01:33.691 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.693 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | default |
+| Output Stream Monitor | 2015-11-30 18:01:33.693 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | / |
+| Output Stream Monitor | 2015-11-30 18:01:33.693 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | x86 |
+| Output Stream Monitor | 2015-11-30 18:01:33.694 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.694 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | default |
+| Output Stream Monitor | 2015-11-30 18:01:33.696 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | /x86_64
+----------
+id: 4 or "Google Inc.:Google APIs:21"
+     Name: Google APIs
+     Type: Add-On
+     Vendor: Google Inc.
+     Revision: 1
+     Description: Android + Google APIs
+     Based on Android 5.0.1 (API level 21)
+     Libraries:
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.704 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |       *  |
+| Output Stream Monitor | 2015-11-30 18:01:33.705 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | com.android.future.usb.accessory |
+| Output Stream Monitor | 2015-11-30 18:01:33.705 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  ( |
+| Output Stream Monitor | 2015-11-30 18:01:33.705 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | usb.jar |
+| Output Stream Monitor | 2015-11-30 18:01:33.705 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | )
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.706 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |            |
+| Output Stream Monitor | 2015-11-30 18:01:33.706 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | API for USB Accessories |
+| Output Stream Monitor | 2015-11-30 18:01:33.707 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.707 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |       * com.google.android.media.effects (effects.jar)
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.707 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |           Collection of video effects
+      *  |
+| Output Stream Monitor | 2015-11-30 18:01:33.707 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | com.google.android.maps (maps.jar)
+          API for Google Maps
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.707 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Skins: HVGA,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.707 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | QVGA, WQVGA400, WQVGA432,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.708 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WSVGA, WVGA800 (default), WVGA854,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.708 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WXGA720, WXGA800, WXGA800-7in |
+| Output Stream Monitor | 2015-11-30 18:01:33.708 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearRound |
+| Output Stream Monitor | 2015-11-30 18:01:33.708 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearSquare, AndroidWearRound,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.708 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearSquare
+ Tag/ABIs :  |
+| Output Stream Monitor | 2015-11-30 18:01:33.709 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | no ABIs.
+----------
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.709 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | id: 5 or " |
+| Output Stream Monitor | 2015-11-30 18:01:33.709 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Google Inc.:Google APIs:22"
+     Name: Google APIs
+     Type: Add-On
+     Vendor:  |
+| Output Stream Monitor | 2015-11-30 18:01:33.709 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Google Inc.
+     Revision: 1
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.709 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Description: Android + Google APIs
+     Based on Android 5.1.1 (API level  |
+| Output Stream Monitor | 2015-11-30 18:01:33.710 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 22)
+     Libraries:
+      * com.android.future.usb.accessory |
+| Output Stream Monitor | 2015-11-30 18:01:33.710 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  (usb.jar)
+          API for USB Accessories
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.710 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |       * com.google.android.media.effects (effects.jar)
+          Collection of video effects |
+| Output Stream Monitor | 2015-11-30 18:01:33.710 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+      * com.google.android.maps (maps.jar)
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.710 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |           API for Google Maps
+     Skins: HVGA,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.710 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | QVGA, WQVGA400, WQVGA432,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.711 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WSVGA, WVGA800 (default) |
+| Output Stream Monitor | 2015-11-30 18:01:33.711 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , WVGA854, WXGA720, WXGA800, WXGA800-7in |
+| Output Stream Monitor | 2015-11-30 18:01:33.711 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearRound, AndroidWearRound400x400, AndroidWearRoundChin320x290 |
+| Output Stream Monitor | 2015-11-30 18:01:33.711 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearRoundChin360x325, AndroidWearRoundChin360x330, AndroidWearSquare |
+| Output Stream Monitor | 2015-11-30 18:01:33.711 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearSquare320x320, AndroidWearRound,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.711 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearRound400x400, AndroidWearRoundChin320x290, AndroidWearRoundChin360x325,  |
+| Output Stream Monitor | 2015-11-30 18:01:33.712 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearRoundChin360x330, AndroidWearSquare, AndroidWearSquare320x320 |
+| Output Stream Monitor | 2015-11-30 18:01:33.712 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ Tag/ABIs : google_apis/armeabi-v7a |
+| Output Stream Monitor | 2015-11-30 18:01:33.712 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , google_apis/x86_64
+----------
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.714 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | id: 6 or "Google Inc.:Google APIs:23"
+     Name: Google APIs
+     Type: Add-On
+     Vendor: Google Inc.
+     Revision: 1
+     Description: Android + Google APIs
+     Based on Android 6.0 (API level 23)
+     Libraries:
+      * com.android.future.usb.accessory (usb.jar)
+ |
+| Output Stream Monitor | 2015-11-30 18:01:33.715 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |           API for USB Accessories
+      * com.google.android.media.effects (effects.jar)
+          Collection of video effects
+      * com.google.android.maps (maps.jar)
+          API for Google Maps |
+| Output Stream Monitor | 2015-11-30 18:01:33.717 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in, AndroidWearRound, AndroidWearRound360x360, AndroidWearRound400x400, AndroidWearRound480x480, AndroidWearRoundChin320x290, AndroidWearRoundChin360x325, AndroidWearRoundChin360x330, AndroidWearSquare, AndroidWearSquare320x320, AndroidWearRound, AndroidWearRound360x360, AndroidWearRound400x400, AndroidWearRound480x480, AndroidWearRoundChin320x290, AndroidWearRoundChin360x325, AndroidWearRoundChin360x330, AndroidWearSquare, AndroidWearSquare320x320
+ Tag/ABIs :  |
+| Output Stream Monitor | 2015-11-30 18:01:33.718 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | google_apis |
+| Output Stream Monitor | 2015-11-30 18:01:33.720 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | /armeabi-v7a, google_apis/x86, google_apis/x86_64
+ |
+| main | 2015-11-30 18:01:33.743 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Sync Execute command line: "/home/slyboots/android-sdks/platform-tools/adb" devices |
+| main | 2015-11-30 18:01:33.745 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Creating TracingStreamListeners for "/home/slyboots/android-sdks/platform-tools/adb" devices |
+| Output Stream Monitor | 2015-11-30 18:01:38.748 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | List of devices attached
+adb server is out of date.  killing...
+* daemon started successfully *
+32041b25a655a143	device
+
+ |
+| Worker-5 | 2015-11-30 18:01:38.877 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Sync Execute command line: "/home/slyboots/android-sdks/platform-tools/adb" start-server |
+| Worker-5 | 2015-11-30 18:01:38.881 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Creating TracingStreamListeners for "/home/slyboots/android-sdks/platform-tools/adb" start-server |
+| Worker-5 | 2015-11-30 18:01:38.932 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Sync Execute command line: "/home/slyboots/android-sdks/platform-tools/adb" devices |
+| Worker-5 | 2015-11-30 18:01:38.962 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Creating TracingStreamListeners for "/home/slyboots/android-sdks/platform-tools/adb" devices |
+| main | 2015-11-30 18:01:55.586 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Sync Execute command line: "/home/slyboots/android-sdks/tools/android" list target |
+| main | 2015-11-30 18:01:55.589 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Creating TracingStreamListeners for "/home/slyboots/android-sdks/tools/android" list target |
+| Output Stream Monitor | 2015-11-30 18:01:55.942 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Available Android targets:
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.193 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ----------
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.193 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | id:  |
+| Output Stream Monitor | 2015-11-30 18:01:56.194 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 1 |
+| Output Stream Monitor | 2015-11-30 18:01:56.194 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  or " |
+| Output Stream Monitor | 2015-11-30 18:01:56.195 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | android-21 |
+| Output Stream Monitor | 2015-11-30 18:01:56.195 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | "
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.195 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Name:  |
+| Output Stream Monitor | 2015-11-30 18:01:56.196 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Android 5.0.1 |
+| Output Stream Monitor | 2015-11-30 18:01:56.196 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.196 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Type: Platform
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.197 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      API level:  |
+| Output Stream Monitor | 2015-11-30 18:01:56.197 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 21 |
+| Output Stream Monitor | 2015-11-30 18:01:56.197 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.198 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Revision:  |
+| Output Stream Monitor | 2015-11-30 18:01:56.198 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 2 |
+| Output Stream Monitor | 2015-11-30 18:01:56.198 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.199 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Skins:  |
+| Output Stream Monitor | 2015-11-30 18:01:56.199 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | HVGA |
+| Output Stream Monitor | 2015-11-30 18:01:56.199 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.200 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | QVGA |
+| Output Stream Monitor | 2015-11-30 18:01:56.200 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.200 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WQVGA400 |
+| Output Stream Monitor | 2015-11-30 18:01:56.200 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.201 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WQVGA432 |
+| Output Stream Monitor | 2015-11-30 18:01:56.201 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.201 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WSVGA |
+| Output Stream Monitor | 2015-11-30 18:01:56.201 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.202 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WVGA800 |
+| Output Stream Monitor | 2015-11-30 18:01:56.202 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  (default) |
+| Output Stream Monitor | 2015-11-30 18:01:56.202 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.203 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WVGA854 |
+| Output Stream Monitor | 2015-11-30 18:01:56.203 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.203 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WXGA720 |
+| Output Stream Monitor | 2015-11-30 18:01:56.203 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.204 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WXGA800 |
+| Output Stream Monitor | 2015-11-30 18:01:56.204 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.204 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WXGA800-7in |
+| Output Stream Monitor | 2015-11-30 18:01:56.205 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearRound, AndroidWearSquare, AndroidWearRound, AndroidWearSquare
+ Tag/ABIs : android-tv/armeabi-v7a, android-tv/x86, android-wear/armeabi-v7a, android-wear/x86,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.206 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | default |
+| Output Stream Monitor | 2015-11-30 18:01:56.206 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | / |
+| Output Stream Monitor | 2015-11-30 18:01:56.206 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | armeabi-v7a |
+| Output Stream Monitor | 2015-11-30 18:01:56.207 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.208 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | default/x86, default/x86_64
+----------
+id: 2 or "android-22"
+     Name: Android 5.1.1
+     Type: Platform
+     API level: 22
+     Revision: 2
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default) |
+| Output Stream Monitor | 2015-11-30 18:01:56.209 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.209 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WVGA854 |
+| Output Stream Monitor | 2015-11-30 18:01:56.209 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.210 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WXGA720 |
+| Output Stream Monitor | 2015-11-30 18:01:56.210 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.210 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WXGA800 |
+| Output Stream Monitor | 2015-11-30 18:01:56.213 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , WXGA800-7in, AndroidWearRound, AndroidWearRound400x400, AndroidWearRoundChin320x290, AndroidWearRoundChin360x325, AndroidWearRoundChin360x330, AndroidWearSquare, AndroidWearSquare320x320, AndroidWearRound, AndroidWearRound400x400, AndroidWearRoundChin320x290, AndroidWearRoundChin360x325, AndroidWearRoundChin360x330, AndroidWearSquare, AndroidWearSquare320x320
+ Tag/ABIs : android-tv/armeabi-v7a, android-tv/x86, android-wear/armeabi-v7a, android-wear/x86, default/armeabi-v7a, default/x86, default/x86_64
+----------
+id: 3 or "android-23 |
+| Output Stream Monitor | 2015-11-30 18:01:56.213 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | "
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.214 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Name:  |
+| Output Stream Monitor | 2015-11-30 18:01:56.217 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Android 6.0 |
+| Output Stream Monitor | 2015-11-30 18:01:56.222 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.222 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Type: Platform
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.222 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      API level:  |
+| Output Stream Monitor | 2015-11-30 18:01:56.223 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 23 |
+| Output Stream Monitor | 2015-11-30 18:01:56.223 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.223 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Revision:  |
+| Output Stream Monitor | 2015-11-30 18:01:56.225 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 2
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.226 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WXGA800, WXGA800-7in |
+| Output Stream Monitor | 2015-11-30 18:01:56.226 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.226 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearRound, AndroidWearRound360x360,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.226 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearRound400x400, AndroidWearRound480x480, AndroidWearRoundChin320x290 |
+| Output Stream Monitor | 2015-11-30 18:01:56.226 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearRoundChin360x325, AndroidWearRoundChin360x330,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.228 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearSquare, AndroidWearSquare320x320, AndroidWearRound, AndroidWearRound360x360, AndroidWearRound400x400, AndroidWearRound480x480, AndroidWearRoundChin320x290, AndroidWearRoundChin360x325, AndroidWearRoundChin360x330, AndroidWearSquare, AndroidWearSquare320x320
+ Tag/ABIs : android-tv/armeabi-v7a, android-tv/x86, android-wear/armeabi-v7a, android-wear/x86, default/armeabi-v7a, default/x86, default/x86_64
+----------
+id: 4 or " |
+| Output Stream Monitor | 2015-11-30 18:01:56.229 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Google Inc.:Google APIs:21"
+     Name: Google APIs
+     Type: Add-On
+     Vendor: Google Inc.
+     Revision: 1
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.229 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Description: Android + Google APIs
+     Based on Android 5.0.1 (API level 21)
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.229 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Libraries:
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.244 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |       * com.android.future.usb.accessory ( |
+| Output Stream Monitor | 2015-11-30 18:01:56.244 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | usb.jar)
+          API for USB Accessories
+      * com.google.android.media.effects (effects.jar)
+          Collection of video effects
+      * com.google.android.maps (maps.jar)
+          API for Google Maps
+     Skins:  |
+| Output Stream Monitor | 2015-11-30 18:01:56.245 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854 |
+| Output Stream Monitor | 2015-11-30 18:01:56.245 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , WXGA720, WXGA800, WXGA800-7in, AndroidWearRound, AndroidWearSquare, AndroidWearRound,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.245 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearSquare
+ Tag/ABIs : no ABIs.
+----------
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.245 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | id: 5 or " |
+| Output Stream Monitor | 2015-11-30 18:01:56.245 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Google Inc.:Google APIs:22"
+     Name: Google APIs
+     Type: Add-On
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.246 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Vendor: Google Inc.
+     Revision: 1
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.246 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Description: Android + Google APIs
+     Based on Android 5.1.1 (API level 22)
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.246 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Libraries:
+      * com.android.future.usb.accessory (usb.jar)
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.246 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |           API for USB Accessories
+      * com.google.android.media.effects |
+| Output Stream Monitor | 2015-11-30 18:01:56.246 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  (effects.jar)
+          Collection of video effects
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.247 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |       * com.google.android.maps (maps.jar)
+          API for Google Maps
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.247 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Skins: HVGA, QVGA, WQVGA400,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.247 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WQVGA432, WSVGA, WVGA800 (default) |
+| Output Stream Monitor | 2015-11-30 18:01:56.247 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , WVGA854, WXGA720, WXGA800,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.247 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WXGA800-7in, AndroidWearRound, AndroidWearRound400x400,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.247 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearRoundChin320x290, AndroidWearRoundChin360x325, AndroidWearRoundChin360x330 |
+| Output Stream Monitor | 2015-11-30 18:01:56.247 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearSquare, AndroidWearSquare320x320, AndroidWearRound,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.248 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearRound400x400, AndroidWearRoundChin320x290, AndroidWearRoundChin360x325 |
+| Output Stream Monitor | 2015-11-30 18:01:56.248 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearRoundChin360x330, AndroidWearSquare, AndroidWearSquare320x320
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.249 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  Tag/ABIs : google_apis/armeabi-v7a, google_apis/x86_64
+----------
+id: 6 or "Google Inc.:Google APIs:23"
+     Name: Google APIs
+     Type: Add-On
+     Vendor: Google Inc.
+     Revision: 1
+     Description: Android + Google APIs
+     Based on Android 6.0 (API level 23)
+     Libraries:
+      * com.android.future.usb.accessory (usb.jar)
+          API for USB Accessories
+      * com.google.android.media.effects (effects.jar)
+          Collection of video effects
+      * com.google.android.maps (maps.jar)
+          API for Google Maps |
+| Output Stream Monitor | 2015-11-30 18:01:56.249 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.249 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in |
+| Output Stream Monitor | 2015-11-30 18:01:56.250 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearRound, AndroidWearRound360x360, AndroidWearRound400x400,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.250 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearRound480x480, AndroidWearRoundChin320x290, AndroidWearRoundChin360x325,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.250 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearRoundChin360x330, AndroidWearSquare, AndroidWearSquare320x320, AndroidWearRound |
+| Output Stream Monitor | 2015-11-30 18:01:56.250 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearRound360x360, AndroidWearRound400x400, AndroidWearRound480x480 |
+| Output Stream Monitor | 2015-11-30 18:01:56.250 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearRoundChin320x290, AndroidWearRoundChin360x325, AndroidWearRoundChin360x330 |
+| Output Stream Monitor | 2015-11-30 18:01:56.250 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearSquare, AndroidWearSquare320x320
+ |
+| Output Stream Monitor | 2015-11-30 18:01:56.251 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  Tag/ABIs : google_apis/armeabi-v7a |
+| Output Stream Monitor | 2015-11-30 18:01:56.251 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , google_apis/x86,  |
+| Output Stream Monitor | 2015-11-30 18:01:56.251 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | google_apis/x86_64
+ |
+| Worker-0 | 2015-11-30 18:01:56.302 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Sync Execute command line: "/home/slyboots/android-sdks/platform-tools/adb" start-server |
+| Worker-0 | 2015-11-30 18:01:56.314 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Creating TracingStreamListeners for "/home/slyboots/android-sdks/platform-tools/adb" start-server |
+| Output Stream Monitor | 2015-11-30 18:02:01.315 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | adb server is out of date.  killing...
+* daemon started successfully *
+ |
+| Worker-0 | 2015-11-30 18:02:01.325 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Sync Execute command line: "/home/slyboots/android-sdks/platform-tools/adb" devices |
+| Worker-0 | 2015-11-30 18:02:01.327 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Creating TracingStreamListeners for "/home/slyboots/android-sdks/platform-tools/adb" devices |
+| Output Stream Monitor | 2015-11-30 18:02:01.328 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | List of devices attached
+32041b25a655a143	device
+
+ |
+| Worker-0 | 2015-11-30 18:02:01.388 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Completed WidgetModel.getWidgetForRead it 4ms |
+| Worker-0 | 2015-11-30 18:02:01.389 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Completed WidgetModel.getWidgetForRead it 0ms |
+| Worker-0 | 2015-11-30 18:02:01.389 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Completed WidgetModel.getWidgetForRead it 0ms |
+| Worker-0 | 2015-11-30 18:02:01.410 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Sync Execute command line: "/home/slyboots/android-sdks/tools/android" list target |
+| Worker-0 | 2015-11-30 18:02:01.412 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Creating TracingStreamListeners for "/home/slyboots/android-sdks/tools/android" list target |
+| Output Stream Monitor | 2015-11-30 18:02:01.781 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Available Android targets:
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.029 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ----------
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.030 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | id:  |
+| Output Stream Monitor | 2015-11-30 18:02:02.030 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 1 |
+| Output Stream Monitor | 2015-11-30 18:02:02.030 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  or " |
+| Output Stream Monitor | 2015-11-30 18:02:02.030 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | android-21 |
+| Output Stream Monitor | 2015-11-30 18:02:02.031 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | "
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.031 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Name:  |
+| Output Stream Monitor | 2015-11-30 18:02:02.031 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Android 5.0.1 |
+| Output Stream Monitor | 2015-11-30 18:02:02.031 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.032 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Type: Platform
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.034 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      API level: 21
+     Revision: 2
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in, AndroidWearRound, AndroidWearSquare, AndroidWearRound, AndroidWearSquare
+ Tag/ABIs : android-tv/armeabi-v7a, android-tv/x86, android-wear/armeabi-v7a, android-wear/x86, default/armeabi-v7a, default/x86, default/x86_64
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.034 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ----------
+id: 2 or "android-22"
+     Name: Android 5.1.1 |
+| Output Stream Monitor | 2015-11-30 18:02:02.034 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+     Type: Platform
+     API level: 22
+     Revision:  |
+| Output Stream Monitor | 2015-11-30 18:02:02.035 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 2
+     Skins: HVGA,  |
+| Output Stream Monitor | 2015-11-30 18:02:02.035 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | QVGA, WQVGA400,  |
+| Output Stream Monitor | 2015-11-30 18:02:02.035 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WQVGA432, WSVGA, WVGA800 |
+| Output Stream Monitor | 2015-11-30 18:02:02.035 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  (default), WVGA854 |
+| Output Stream Monitor | 2015-11-30 18:02:02.035 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , WXGA720, WXGA800 |
+| Output Stream Monitor | 2015-11-30 18:02:02.035 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , WXGA800-7in, AndroidWearRound,  |
+| Output Stream Monitor | 2015-11-30 18:02:02.035 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearRound400x400, AndroidWearRoundChin320x290,  |
+| Output Stream Monitor | 2015-11-30 18:02:02.036 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearRoundChin360x325, AndroidWearRoundChin360x330,  |
+| Output Stream Monitor | 2015-11-30 18:02:02.036 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearSquare, AndroidWearSquare320x320,  |
+| Output Stream Monitor | 2015-11-30 18:02:02.036 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearRound, AndroidWearRound400x400, AndroidWearRoundChin320x290 |
+| Output Stream Monitor | 2015-11-30 18:02:02.036 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearRoundChin360x325, AndroidWearRoundChin360x330 |
+| Output Stream Monitor | 2015-11-30 18:02:02.036 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearSquare, AndroidWearSquare320x320 |
+| Output Stream Monitor | 2015-11-30 18:02:02.036 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ Tag/ABIs : android-tv/ |
+| Output Stream Monitor | 2015-11-30 18:02:02.036 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | armeabi-v7a, android-tv/ |
+| Output Stream Monitor | 2015-11-30 18:02:02.037 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | x86, android-wear/armeabi-v7a |
+| Output Stream Monitor | 2015-11-30 18:02:02.037 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , android-wear/x86 |
+| Output Stream Monitor | 2015-11-30 18:02:02.037 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , default/armeabi-v7a |
+| Output Stream Monitor | 2015-11-30 18:02:02.037 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , default/x86,  |
+| Output Stream Monitor | 2015-11-30 18:02:02.037 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | default/x86_64
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.037 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ----------
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.037 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | id: 3 or "android-23"
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.038 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Name: Android 6.0
+     Type: Platform
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.038 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      API level: 23
+     Revision:  |
+| Output Stream Monitor | 2015-11-30 18:02:02.038 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 2
+     Skins: HVGA |
+| Output Stream Monitor | 2015-11-30 18:02:02.038 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , QVGA, WQVGA400 |
+| Output Stream Monitor | 2015-11-30 18:02:02.038 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , WQVGA432, WSVGA,  |
+| Output Stream Monitor | 2015-11-30 18:02:02.038 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WVGA800 (default), WVGA854 |
+| Output Stream Monitor | 2015-11-30 18:02:02.039 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , WXGA720, WXGA800, WXGA800-7in,  |
+| Output Stream Monitor | 2015-11-30 18:02:02.039 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearRound, AndroidWearRound360x360, AndroidWearRound400x400 |
+| Output Stream Monitor | 2015-11-30 18:02:02.039 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearRound480x480, AndroidWearRoundChin320x290 |
+| Output Stream Monitor | 2015-11-30 18:02:02.039 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearRoundChin360x325, AndroidWearRoundChin360x330 |
+| Output Stream Monitor | 2015-11-30 18:02:02.039 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearSquare, AndroidWearSquare320x320,  |
+| Output Stream Monitor | 2015-11-30 18:02:02.039 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearRound, AndroidWearRound360x360, AndroidWearRound400x400 |
+| Output Stream Monitor | 2015-11-30 18:02:02.040 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearRound480x480, AndroidWearRoundChin320x290, AndroidWearRoundChin360x325, AndroidWearRoundChin360x330,  |
+| Output Stream Monitor | 2015-11-30 18:02:02.040 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearSquare, AndroidWearSquare320x320
+ Tag/ABIs :  |
+| Output Stream Monitor | 2015-11-30 18:02:02.040 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | android-tv/armeabi-v7a,  |
+| Output Stream Monitor | 2015-11-30 18:02:02.040 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | android-tv/x86,  |
+| Output Stream Monitor | 2015-11-30 18:02:02.040 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | android-wear |
+| Output Stream Monitor | 2015-11-30 18:02:02.042 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | / |
+| Output Stream Monitor | 2015-11-30 18:02:02.045 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | armeabi-v7a, android-wear/x86, default/armeabi-v7a, default/x86, default/x86_64
+----------
+id: 4 or "Google Inc.:Google APIs:21"
+     Name: Google APIs
+     Type: Add-On
+     Vendor: Google Inc.
+     Revision: 1
+     Description: Android + Google APIs
+     Based on Android 5.0.1 (API level 21)
+     Libraries:
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.052 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |       * com.android.future.usb.accessory |
+| Output Stream Monitor | 2015-11-30 18:02:02.052 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  (usb.jar)
+          API for USB Accessories
+      * com.google.android.media.effects (effects.jar)
+          Collection of video effects
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.052 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |       * com.google.android.maps (maps.jar)
+           |
+| Output Stream Monitor | 2015-11-30 18:02:02.055 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | API for Google Maps
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in, AndroidWearRound, AndroidWearSquare, AndroidWearRound, AndroidWearSquare
+ Tag/ABIs :  |
+| Output Stream Monitor | 2015-11-30 18:02:02.057 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | no ABIs.
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.057 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ----------
+id: 5 or "Google Inc.:Google APIs:22"
+     Name:  |
+| Output Stream Monitor | 2015-11-30 18:02:02.057 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Google APIs
+     Type: Add-On
+     Vendor: Google Inc.
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.057 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Revision: 1
+     Description: Android + Google APIs |
+| Output Stream Monitor | 2015-11-30 18:02:02.058 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.058 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Based on Android 5.1.1 (API level 22)
+     Libraries:
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.059 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |       * com.android.future.usb.accessory (usb.jar)
+           |
+| Output Stream Monitor | 2015-11-30 18:02:02.059 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | API for USB Accessories
+      * com.google.android.media.effects (effects.jar |
+| Output Stream Monitor | 2015-11-30 18:02:02.059 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | )
+          Collection of video effects
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.059 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |       * com.google.android.maps (maps.jar)
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.059 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |           API for Google Maps
+     Skins: HVGA |
+| Output Stream Monitor | 2015-11-30 18:02:02.059 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , QVGA, WQVGA400,  |
+| Output Stream Monitor | 2015-11-30 18:02:02.059 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WQVGA432, WSVGA,  |
+| Output Stream Monitor | 2015-11-30 18:02:02.059 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WVGA800 (default), WVGA854 |
+| Output Stream Monitor | 2015-11-30 18:02:02.060 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , WXGA720, WXGA800,  |
+| Output Stream Monitor | 2015-11-30 18:02:02.060 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | WXGA800-7in, AndroidWearRound, AndroidWearRound400x400 |
+| Output Stream Monitor | 2015-11-30 18:02:02.060 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearRoundChin320x290, AndroidWearRoundChin360x325 |
+| Output Stream Monitor | 2015-11-30 18:02:02.060 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearRoundChin360x330, AndroidWearSquare,  |
+| Output Stream Monitor | 2015-11-30 18:02:02.060 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearSquare320x320, AndroidWearRound,  |
+| Output Stream Monitor | 2015-11-30 18:02:02.060 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | AndroidWearRound400x400, AndroidWearRoundChin320x290, AndroidWearRoundChin360x325 |
+| Output Stream Monitor | 2015-11-30 18:02:02.060 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearRoundChin360x330, AndroidWearSquare |
+| Output Stream Monitor | 2015-11-30 18:02:02.061 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , AndroidWearSquare320x320
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.061 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  Tag/ABIs : google_apis/armeabi-v7a |
+| Output Stream Monitor | 2015-11-30 18:02:02.061 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | , google_apis/x86_64 |
+| Output Stream Monitor | 2015-11-30 18:02:02.061 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+----------
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.061 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | id:  |
+| Output Stream Monitor | 2015-11-30 18:02:02.061 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 6 or "Google Inc.:Google APIs:23"
+     Name: Google APIs
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.061 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Type: Add-On
+     Vendor: Google Inc. |
+| Output Stream Monitor | 2015-11-30 18:02:02.069 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.070 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Revision:  |
+| Output Stream Monitor | 2015-11-30 18:02:02.070 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 1 |
+| Output Stream Monitor | 2015-11-30 18:02:02.071 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.071 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Description:  |
+| Output Stream Monitor | 2015-11-30 18:02:02.071 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Android + Google APIs |
+| Output Stream Monitor | 2015-11-30 18:02:02.072 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.072 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Based on Android  |
+| Output Stream Monitor | 2015-11-30 18:02:02.072 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 6.0 |
+| Output Stream Monitor | 2015-11-30 18:02:02.072 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  (API level  |
+| Output Stream Monitor | 2015-11-30 18:02:02.073 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 23 |
+| Output Stream Monitor | 2015-11-30 18:02:02.073 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | )
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.073 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |      Libraries:
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.073 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |       *  |
+| Output Stream Monitor | 2015-11-30 18:02:02.074 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | com.android.future.usb.accessory |
+| Output Stream Monitor | 2015-11-30 18:02:02.074 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  ( |
+| Output Stream Monitor | 2015-11-30 18:02:02.075 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | usb.jar |
+| Output Stream Monitor | 2015-11-30 18:02:02.075 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | )
+          API for USB Accessories
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.075 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |       * com.google.android.media.effects (effects.jar)
+           |
+| Output Stream Monitor | 2015-11-30 18:02:02.075 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Collection of video effects
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.075 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |       * com.google.android.maps (maps.jar)
+          API for Google Maps |
+| Output Stream Monitor | 2015-11-30 18:02:02.078 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in, AndroidWearRound, AndroidWearRound360x360, AndroidWearRound400x400, AndroidWearRound480x480, AndroidWearRoundChin320x290, AndroidWearRoundChin360x325, AndroidWearRoundChin360x330, AndroidWearSquare, AndroidWearSquare320x320, AndroidWearRound, AndroidWearRound360x360, AndroidWearRound400x400, AndroidWearRound480x480, AndroidWearRoundChin320x290, AndroidWearRoundChin360x325, AndroidWearRoundChin360x330, AndroidWearSquare, AndroidWearSquare320x320
+ Tag/ABIs : google_apis/armeabi-v7a, google_apis/x86, google_apis/x86_64
+ |
+| Worker-0 | 2015-11-30 18:02:02.115 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Sync Execute command line: "/home/slyboots/android-sdks/tools/android" create project --target android-22 --path "/home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android" --name "BTS_Maintenance_System_Client" --activity BTS_Maintenance_System_Client --package bts.maintenance.system.client |
+| Worker-0 | 2015-11-30 18:02:02.116 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Creating TracingStreamListeners for "/home/slyboots/android-sdks/tools/android" create project --target android-22 --path "/home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android" --name "BTS_Maintenance_System_Client" --activity BTS_Maintenance_System_Client --package bts.maintenance.system.client |
+| Output Stream Monitor | 2015-11-30 18:02:02.798 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Created project directory:  |
+| Output Stream Monitor | 2015-11-30 18:02:02.798 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | /home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.807 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Created directory  |
+| Output Stream Monitor | 2015-11-30 18:02:02.808 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | /home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android/src/bts/maintenance/system/client
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.840 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Added |
+| Output Stream Monitor | 2015-11-30 18:02:02.840 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  file  |
+| Output Stream Monitor | 2015-11-30 18:02:02.841 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | /home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android/src/bts/maintenance/system/client/BTS_Maintenance_System_Client.java |
+| Output Stream Monitor | 2015-11-30 18:02:02.841 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.842 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Created directory  |
+| Output Stream Monitor | 2015-11-30 18:02:02.842 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | /home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android/res |
+| Output Stream Monitor | 2015-11-30 18:02:02.843 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.843 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Created directory  |
+| Output Stream Monitor | 2015-11-30 18:02:02.844 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | /home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android/bin |
+| Output Stream Monitor | 2015-11-30 18:02:02.844 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.864 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Created directory  |
+| Output Stream Monitor | 2015-11-30 18:02:02.865 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | /home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android/libs |
+| Output Stream Monitor | 2015-11-30 18:02:02.865 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.865 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Created directory /home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android/res/values
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.866 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Added |
+| Output Stream Monitor | 2015-11-30 18:02:02.867 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  file /home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android/res/values/strings.xml
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.867 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Created directory /home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android/res/layout
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.869 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Added |
+| Output Stream Monitor | 2015-11-30 18:02:02.869 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  file /home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android/res/layout/main.xml
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.870 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Created directory  |
+| Output Stream Monitor | 2015-11-30 18:02:02.870 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | /home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android/res/drawable-xhdpi
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.871 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Created directory  |
+| Output Stream Monitor | 2015-11-30 18:02:02.871 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | /home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android/res/drawable-hdpi
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.886 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Created directory /home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android/res/drawable-mdpi
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.887 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Created directory  |
+| Output Stream Monitor | 2015-11-30 18:02:02.887 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | /home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android/res/drawable-ldpi
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.889 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Added file  |
+| Output Stream Monitor | 2015-11-30 18:02:02.889 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | /home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android/AndroidManifest.xml
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.910 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Added file  |
+| Output Stream Monitor | 2015-11-30 18:02:02.910 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | /home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android/build.xml
+ |
+| Output Stream Monitor | 2015-11-30 18:02:02.914 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Added |
+| Output Stream Monitor | 2015-11-30 18:02:02.914 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  file /home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android/proguard-project.txt
+ |
+| Worker-0 | 2015-11-30 18:02:03.256 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Completed WidgetModel.getWidgetForRead it 0ms |
+| Worker-0 | 2015-11-30 18:02:03.449 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Really updating the installed plugin list |
+| Worker-0 | 2015-11-30 18:02:03.451 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Updated plugin list in 2 ms |
+| Worker-0 | 2015-11-30 18:02:03.452 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | android project generated in 2069 ms. |
+| Worker-0 | 2015-11-30 18:02:33.371 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Completed WidgetModel.getWidgetForRead it 1ms |
+| Worker-0 | 2015-11-30 18:02:33.396 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Completed WidgetModel.getWidgetForRead it 0ms |
+| Worker-0 | 2015-11-30 18:02:33.396 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Completed WidgetModel.getWidgetForRead it 0ms |
+| Worker-0 | 2015-11-30 18:02:33.397 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Sync Execute command line: "/home/slyboots/android-sdks/platform-tools/adb" -s 32041b25a655a143 install -r "/home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android/bin/BTS_Maintenance_System_Client-debug.apk" |
+| Worker-0 | 2015-11-30 18:02:33.427 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Creating TracingStreamListeners for "/home/slyboots/android-sdks/platform-tools/adb" -s 32041b25a655a143 install -r "/home/slyboots/development/environment/eclipse_mobile/eclipse/configuration/org.eclipse.osgi/933/data/proj_gen/BTSMaintenanceSystemClient/android/bin/BTS_Maintenance_System_Client-debug.apk" |
+| Output Stream Monitor | 2015-11-30 18:02:36.032 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 3301 KB/s (8576932 bytes in 2.537s)
+ |
+| Output Stream Monitor | 2015-11-30 18:02:36.033 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 3301 KB/s (8576932 bytes in 2.537s)
+ |
+| Output Stream Monitor | 2015-11-30 18:02:37.826 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 	pkg: /data/local/tmp/BTS_Maintenance_System_Client-debug.apk
+ |
+| Output Stream Monitor | 2015-11-30 18:02:41.750 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Success |
+| Output Stream Monitor | 2015-11-30 18:02:41.752 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Worker-0 | 2015-11-30 18:02:42.199 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Sync Execute command line: "/home/slyboots/android-sdks/platform-tools/adb" -s 32041b25a655a143 shell am start -n bts.maintenance.system.client/.BTS_Maintenance_System_Client |
+| Worker-0 | 2015-11-30 18:02:42.211 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Creating TracingStreamListeners for "/home/slyboots/android-sdks/platform-tools/adb" -s 32041b25a655a143 shell am start -n bts.maintenance.system.client/.BTS_Maintenance_System_Client |
+| Output Stream Monitor | 2015-11-30 18:02:43.853 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Starting: Intent { cmp=bts.maintenance.system.client/.BTS_Maintenance_System_Client }
+ |
+| Worker-0 | 2015-11-30 18:02:44.270 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Async Execute command line: "/home/slyboots/android-sdks/platform-tools/adb" -s 32041b25a655a143 logcat Cordova:V DroidGap:V CordovaLog:V CordovaPlugin:V CordovaChromeClient:V CordovaWebView:V *:S |
+| Output Stream Monitor | 2015-11-30 18:02:44.362 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | --------- beginning of /dev/log/main
+ |
+| Output Stream Monitor | 2015-11-30 18:02:44.738 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | --------- beginning of /dev/log/system
+ |
+| Worker-1 | 2015-11-30 18:05:00.141 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Really updating the installed plugin list |
+| Worker-1 | 2015-11-30 18:05:00.141 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Updated plugin list in 0 ms |
