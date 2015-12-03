@@ -1,8 +1,8 @@
 /**
- * 
+ *
  */
 
-function callAnothePage() {
-	console.log("callAnothePage");
-	window.location = "html/intro.html";
+function callAnotherPage() {
+    console.log("callSearchPage");
+    window.location = "html/menu.html";
 }
