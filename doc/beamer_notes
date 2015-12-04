@@ -1,0 +1,75 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\title{BTS Maintenance System }
+\subtitle{Wykorzystane technologie}
+ \author{Michał Błach, Kacper Szewczyk}
+%\institute{Slyboots \& Zawodnik Company}
+\date{\today}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{Test section one}
+\begin{frame} test\end{frame}
+
+
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}
+    \frametitle{This is the second slide}
+    \framesubtitle{A bit more information about this}
+    %More content goes here
+  \end{frame}
+  
+  
+  \begin{frame}
+    \frametitle{This is the second slide}
+    \framesubtitle{A bit more information about this}
+      \pause
+The first concept we introduce originates with Erd\H os.
+    %More content goes here
+   
+  \end{frame}
+  
+  
+  \begin{frame}[allowframebreaks]
+  \frametitle<presentation>{Further Reading}    
+  \begin{thebibliography}{10}    
+  \setbeamertemplate{bibliography item}[book]
+  \bibitem{Autor1990}
+    A.~Autor.
+    \newblock {\em Introduction to Giving Presentations}.
+    \newblock Klein-Verlag, 1990.
+  \setbeamertemplate{bibliography item}[article]
+  \bibitem{Jemand2000}
+    S.~Jemand.
+    \newblock On this and that.
+    \newblock {\em Journal of This and That}, 2(1):50--100, 2000.
+  \end{thebibliography}
+
+\end{frame}
+  
+  \begin{frame}
+    \frametitle{This is the second slide}
+    \framesubtitle{A bit more information about this}
+   Watch this slide grow.
+\pause
+\begin{itemize}
+\item Hello, World!
+\pause
+\item Hello, Mars!
+\pause
+\item Hello, Alpha Centauri!
+\end{itemize}
+  \end{frame}
+
+
+\end{document}
+
