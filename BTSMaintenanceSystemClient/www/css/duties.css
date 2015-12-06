@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+
+body {
+    background-image:  url('../img/background.jpg');
+    background-repeat: repeat;
+    background-size: auto;
+
+}
+.banner_block {
+    height:100%;
+    width: 100%;
+    position: fixed;
+    opacity: 10;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: black;
+    color: yellow;
+    font-size: large;
+
+}
