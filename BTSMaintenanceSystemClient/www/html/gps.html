@@ -2,11 +2,41 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta charset="UTF-8">
     <title>GPS</title>
     <link rel="stylesheet" type="text/css" href="../css/gps.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/gps.js"></script>
 </head>
 <body>
-Raz dwa trzy Kosior patrzy
+<header>
+    <div class="search_block">
+        <button id=get_position_button onclick="getPosition()">Otrzymaj lokalizację</button>
+        <p id="geolocation">Finding geolocation...</p>
+        <table class="table table-bordered" id="records">
+            <thead>
+            <tr>
+                <th>Data</th>
+                <th>Nazwisko i imię</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>10.12.2013</td>
+                <td>Sałat Piotr</td>
+            </tr>
+            <tr>
+                <td>11.12.2013</td>
+                <td>Sałat Piotr</td>
+            </tr>
+            <tr>
+                <td>12.12.2013</td>
+                <td>Sałat Piotr</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</header>
 </body>
 </html>
