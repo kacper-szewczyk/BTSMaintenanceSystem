@@ -7,19 +7,57 @@ body {
     background-size: auto;
 
 }
-.banner_block {
+.duties_block {
     height:100%;
     width: 100%;
     position: fixed;
     opacity: 10;
+    background-color: inherit;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 5px;
+}
+
+img {
+    width:100%;
+    height:auto;
+    max-height: 25%;
+    max-width: 484px;
+    image-rendering: auto;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00a8ff ;
 }
 
 table {
     display: table;
     border-collapse: separate;
     border-spacing: 2px;
-    border-color: black;
-    color: yellow;
+    border-color: #00a8ff;
+    color: #00a8ff;
     font-size: large;
+}
+
+thead {
+    background-color: orange;
+    color: white;
+    font-size: large;
+}
+
+tbody {
+    border-color: #00a8ff;
 
 }
+
+p {
+    color: #ffa300;
+}
+
+tr,thead {
+    border-bottom: 2px solid #00a8ff ;
+}
+td,th {
+    border-bottom: 2px solid #00a8ff ;
+    border-top: 2px solid #00a8ff ;
+    border
+}
+
