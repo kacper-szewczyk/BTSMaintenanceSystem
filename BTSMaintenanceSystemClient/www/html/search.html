@@ -10,25 +10,28 @@
 </head>
 <body>
     <header>
-        <strong>MIASTO</strong>
+        <strong>
+            <p id="search_parameter"></p>
+        </strong>
     </header>
     <section id="sidebar">
         <aside>
             <nav id="nav">
                 <ul id="navigation">
-                    <li><a href="#"><img src="../img/spinnerico.gif"></a>
+                    <li><a href="#" onclick="document.getElementById('search_parameter').innerHTML = updateHeader(document.URL)">
+                        <img src="../img/spinnerico.gif"></a>
                         <ul>
-                            <li><a href="#">Service 1</a></li>
-                            <li><a href="#">Service 2</a></li>
-                            <li><a href="#">Service 3 &raquo;</a>
+                            <li><a href="#1">Service 1</a></li>
+                            <li><a href="#2">Service 2</a></li>
+                            <li><a href="#3">Service 3 &raquo;</a>
                                 <ul>
-                                    <li><a href="#">SubMenu 1</a></li>
-                                    <li><a href="#">SubMenu 2</a></li>
-                                    <li><a href="#">SubMenu 3</a></li>
-                                    <li><a href="#">SubMenu 4</a></li>
+                                    <li><a href="#4">SubMenu 1</a></li>
+                                    <li><a href="#5">SubMenu 2</a></li>
+                                    <li><a href="#6">SubMenu 3</a></li>
+                                    <li><a href="#7">SubMenu 4</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Service 4</a></li>
+                            <li><a href="#8">Service 4</a></li>
                         </ul>
                     </li>
                 </ul>
