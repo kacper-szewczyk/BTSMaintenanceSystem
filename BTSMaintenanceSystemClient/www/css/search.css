@@ -5,38 +5,53 @@ body {
     background-image:  url('../img/background.jpg');
     background-repeat: repeat;
     background-size: auto;
-    line-height: 1;
-    font: 12px/20px Arial;
 
 }
 input {
     background-color: #393939;
     border-bottom-color: #00a8ff;
-    width: 80%;
+    width: 70%;
     height: 15%;
     font-size: large;
     color: #00a8ff;
+    left: 10px;
 }
 
-#wrapper{
-    display: flex;
-    width:620px;
-    margin:0 auto;
-    margin-top:100px;
+header {
+    background-color: orange;
+    color: white;
+    font-size: large;
+    width: 100%;
+    height: 15%;
+    position: center;
 }
-#wrapper div {
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 15px;
+
+#sidebar {
+    float: left;
+    width: 200px;
+}
+aside {
+    position: fixed;
+    right: 5px;
+    top: 50px;
+}
+
+table{
+    width:95%;
+    margin:5px auto;
+}
+
+th {
+    position: center;
 }
 
 #nav {
     position:relative;
-    width:620px;
+    width:95%;
     margin:0 auto;
 }
 #input_wrapper {
-    width: 80%;
+    width: 95%;
     height: auto;
 }
 
@@ -111,7 +126,7 @@ ul#navigation ul, ul#navigation ul li ul {
 }
 
 ul#navigation ul {
-    top: 43px;
+    top: 0px;
     left: 1px;
 }
 
