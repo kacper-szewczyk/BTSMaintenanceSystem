@@ -1,0 +1,12 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Aplikacja kliencka}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Projektowanie aplikacji i problemy z tym zwi\IeC {\k a}zane}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Dost\IeC {\k e}pne frameworki}{16}{0}{1}
+\beamer@subsectionintoc {1}{3}{Cordova}{18}{0}{1}
+\beamer@subsubsectionintoc {1}{3}{1}{HTML5}{25}{0}{1}
+\beamer@subsubsectionintoc {1}{3}{2}{Java Script}{28}{0}{1}
+\beamer@sectionintoc {2}{Zewn\IeC {\k e}trzny serwer do synchronizacji danych}{34}{0}{2}
+\beamer@subsectionintoc {2}{1}{JBoss WILDFLY}{34}{0}{2}
+\beamer@subsectionintoc {2}{2}{J\IeC {\k e}zki programowania i frameworki}{35}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{1}{Java 1.8 }{35}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{2}{JAX-RS Jersey}{41}{0}{2}
