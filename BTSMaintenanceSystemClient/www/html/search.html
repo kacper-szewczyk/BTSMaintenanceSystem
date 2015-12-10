@@ -7,43 +7,49 @@
     <meta name="description" content="Free Web tutorials">
     <meta name="keywords" content="HTML,CSS">
     <meta name="author" content="WebCodeGeeks.com">
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/search.js"></script>
 </head>
 <body>
-    <header>
-        <strong>
-            <p id="search_parameter"></p>
-        </strong>
-    </header>
-    <section id="sidebar">
-        <aside>
-            <nav id="nav">
-                <ul id="navigation">
-                    <li><a href="#" onclick="document.getElementById('search_parameter').innerHTML = updateHeader(document.URL)">
-                        <img src="../img/spinnerico.gif"></a>
-                        <ul>
-                            <li><a href="#1">Service 1</a></li>
-                            <li><a href="#2">Service 2</a></li>
-                            <li><a href="#3">Service 3 &raquo;</a>
-                                <ul>
-                                    <li><a href="#4">SubMenu 1</a></li>
-                                    <li><a href="#5">SubMenu 2</a></li>
-                                    <li><a href="#6">SubMenu 3</a></li>
-                                    <li><a href="#7">SubMenu 4</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#8">Service 4</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-    </section>
-    <section>
-        <header>
-            <block id="input_wrapper">
-                <input type="text" name="searchText">
-            </block>
+    <div id="header_id">
+        <header id="headerHandler">
+            <strong>Wyszukaj: <p id="search_parameter"></p></strong>
         </header>
+            <div id="input_wrapper">
+                <input type="text" name="searchText">
+            </div>
+            <div id="searchIcoDiv">
+                <button type="button" id="searchHandler" ><img src="../img/Searchico.jpg" id="searchImageHandler"></button>
+            </div>
+
+            <div id="popupMenuHandlerDiv">
+                <nav id="nav">
+
+                    <ul id="navigation">
+                        <button type="button" id="popupMenuHandler" ><img src="../img/spinnerico.gif" id="imageHandler"></button>
+                        <li>
+                            <ul class="filterElements">
+                                <li><a data-type="station" href="javascript:void(0)">Po stacji &raquo;</a>
+                                    <ul>
+                                        <li><a data-type="nameOfStation" href="javascript:void(0)">Nazwa stacji</a></li>
+                                        <li><a data-type="nameOfPTC" href="javascript:void(0)">Nazwa PTC</a></li>
+                                    </ul>
+                                </li>
+                                <li><a data-type="localization" href="javascript:void(0)">Po lokalizacji &raquo;</a>
+                                    <ul>
+                                        <li><<a data-type="city" href="javascript:void(0)">Miejscowość</a></li>
+                                        <li><<a data-type="region" href="javascript:void(0)">Region</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
+    </div>
+    <div id="data_id">
         <article>
             <div class="wrapper">
                 <table class="table table-hover table-condensed" cellspacing="0" width="100%" >
@@ -68,7 +74,8 @@
             </div>
         </article>
 
-    </section>
+    </div>
 
 </body>
+
 </html>

@@ -7,61 +7,77 @@ body {
     background-size: auto;
 
 }
+
+button {
+    display: inline;
+    clear: both;
+    background-size: contain;
+    background-position: left;
+    transition: 300ms all;
+    background-color: inherit;
+    background-repeat: no-repeat;
+}
 input {
     background-color: #393939;
     border-bottom-color: #00a8ff;
     width: 70%;
     height: 15%;
-    font-size: large;
+    font-size: x-large;
     color: #00a8ff;
-    left: 10px;
-    top: 100px;
 }
 
-header {
+#searchHandler {
+    border: none;
+    display: block;
+    clear: both;
+    background-size: contain;
+}
+#header_id {
+    width: 100%;
+    height: 10%;
+}
+#headerHandler {
     background-color: orange;
     color: white;
-    font-size: large;
-    width: 100%;
-    height: 15%;
     position: center;
+    text-align: center;
+    font-size: xx-large;
 }
 
-#sidebar {
-    float: left;
-    width: 200px;
-}
-aside {
-    position: fixed;
-    right: 5px;
-    top: 50px;
+#searchIcoDiv {
+    display: inline-flex;
 }
 
-table{
-    width:95%;
-    margin:5px auto;
+#input_wrapper {
+    width: 80%;
+    height: auto;
+    display:inline;
+}
+#popupMenuHandler {
+    width: 50%;
+    height: auto;
+    border: none;
+    display: inline-flex;
+    clear: both;
+    background-size: contain;
+}
+#popupMenuHandlerDiv {
+    display:inline-flex;
 }
 
-th {
-    position: center;
+#imageHandler {
+    width: 50%;
 }
 
 #nav {
     position:relative;
-    width:95%;
-    margin:0 auto;
-}
-#input_wrapper {
-    width: 95%;
-    height: auto;
+    margin:0px;
 }
 
+
 ul#navigation {
-    margin:0px auto;
+    margin:0px;
     position:relative;
-    float:left;
-    border-left:1px solid #c4dbe7;
-    border-right:1px solid #c4dbe7;
 }
 
 ul#navigation li {
@@ -70,10 +86,6 @@ ul#navigation li {
     font-weight:bold;
     margin:0;
     padding:0;
-    float:left;
-    position:relative;
-    border-top:1px solid #c4dbe7;
-    border-bottom:2px solid #c4dbe7;
 }
 
 ul#navigation ul, ul#navigation ul li ul {
@@ -83,8 +95,9 @@ ul#navigation ul, ul#navigation ul li ul {
     visibility:hidden;
     position: absolute;
     z-index: 99999;
-    width:180px;
-    background:#f8f8f8;
+    width:0px;
+    background: black;
+    color: #00a8ff;
     box-shadow:0 2px 2px -1px rgba(0, 0, 0, 0.055);
     opacity:0;
     -webkit-transition:opacity 0.2s linear, visibility 0.2s linear; ///* Chrome &amp; Safari*/
@@ -94,16 +107,16 @@ transition:opacity 0.2s linear, visibility 0.2s linear;
 }
 
 ul#navigation li a:hover {
-    background:#f8f8f8;
-    color:#282828;
+    background:black;
+    color: #00a8ff;
 }
 
 ul#navigation li:hover > a {
-    background:#fff;
+    background:black;
 }
 
 /* Drop-Down Navigation */
-ul#navigation li:hover > ul
+ul#navigation:active > li > ul
 {
     visibility:visible;
     opacity:1;
@@ -132,7 +145,7 @@ ul#navigation ul {
 }
 
 ul#navigation ul li ul {
-    top: 0;
+    bottom: 100px;
     left: 181px;
 }
 
@@ -144,16 +157,13 @@ ul#navigation ul li {
 }
 
 ul#navigation ul li a {
-    background:none;
-    padding:7px 15px;
-    color:#616161;
+    background:black;
+    color:#00a8ff;
     text-shadow:1px 1px 0px #fff;
     text-decoration:none;
     display:inline-block;
-    border:0 none;
     float:left;
     clear:both;
-    width:20%;
 }
 
 ul#navigation li a.first {
