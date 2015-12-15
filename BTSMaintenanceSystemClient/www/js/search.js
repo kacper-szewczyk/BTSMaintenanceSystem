@@ -12,25 +12,40 @@ $(document).ready(function() {
                 var self = this;
                 console.log($navigation);
                 $navigation.click(function () {
-                    self.openHamburger();
+                    self.openDialogBox();
 
                 });
-
                 $('.filterElements a').click(function() {
                     var type = $(this).data('type');
                     self.chooseNavElement(type)
                 });
                 $('#navigation .close').click(function() {
-                    self.closeHamburger();
+                    self.closeDialogBox();
+                });
+                $('#navigation .nameOfStation').click(function() {
+                    self.updateHeader('Nazwa stacji');
+                });
+                $('#navigation .nameOfPTC').click(function() {
+                    self.updateHeader('Nazwa PTC');
+                });
+                $('#searchIcoDiv').click(function() {
+                    alert('Kosik jest paskudnym gejem');
                 });
 
-            },
-            openHamburger: function () {
-                state = 1;
-                $('#navigation').fadeIn();
 
             },
-            closeHamburger: function () {
+            openDialogBox: function () {
+                if (state === 1) {
+                    state = 0;
+                    $('#navigation').fadeOut();
+                } else {
+                    state = 1;
+                    $('#navigation').fadeIn();
+                }
+
+
+            },
+            closeDialogBox: function () {
               if (state === 1) {
                   $('#navigation').fadeOut();
                   state = 0;
@@ -41,6 +56,11 @@ $(document).ready(function() {
                     return;
                 }
                 alert('Clicked on element '+ type );
+            },
+            updateHeader: function(headerName) {
+                $('#search_parameter').html(headerName);
+                $('#navigation').fadeOut();
+                state = 0;
             }
         };
     })();
