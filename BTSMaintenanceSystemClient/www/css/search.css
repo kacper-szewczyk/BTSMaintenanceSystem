@@ -50,8 +50,12 @@ input {
 
 #input_wrapper {
     width: 80%;
+    overflow: hidden;
     height: auto;
     display:inline;
+}
+#input_wrapper input[type=text] {
+    float: left;
 }
 #popupMenuHandler {
     width: 50%;
@@ -73,103 +77,25 @@ input {
     position:relative;
     margin:0px;
 }
-
-
-ul#navigation {
-    margin:0px;
-    position:relative;
+#searchIcoDiv {
+    float: left;
+    position: relative;
+    left: -6px;
+    top: -1px;
 }
 
-ul#navigation li {
-    display:inline;
-    font-size:12px;
-    font-weight:bold;
-    margin:0;
-    padding:0;
-}
-
-ul#navigation ul, ul#navigation ul li ul {
+#navigation {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    visibility:hidden;
-    position: absolute;
-    z-index: 99999;
-    width:0px;
-    background: black;
-    color: #00a8ff;
-    box-shadow:0 2px 2px -1px rgba(0, 0, 0, 0.055);
-    opacity:0;
-    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear; ///* Chrome &amp; Safari*/
--moz-transition:opacity 0.2s linear, visibility 0.2s linear; // /*Mozilla Firefox*/
--o-transition:opacity 0.2s linear, visibility 0.2s linear; // /* Opera */
-transition:opacity 0.2s linear, visibility 0.2s linear;
-}
+    position: fixed;
+    width:95%;
+    background: orange;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid #ffa300;
+    display: none;
 
-ul#navigation li a:hover {
-    background:black;
-    color: #00a8ff;
 }
-
-ul#navigation li:hover > a {
-    background:black;
-}
-
-/* Drop-Down Navigation */
-ul#navigation:active > li > ul
-{
-    visibility:visible;
-    opacity:1;
-}
-
-ul#navigation ul, ul#navigation ul li ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    visibility:hidden;
-    position: absolute;
-    z-index: 99999;
-    width:180px;
-    background:#f8f8f8;
-    box-shadow:0 2px 2px -1px rgba(0, 0, 0, 0.055);
-    opacity:0;
-    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
-    -moz-transition:opacity 0.2s linear, visibility 0.2s linear;
-    -o-transition:opacity 0.2s linear, visibility 0.2s linear;
-    transition:opacity 0.2s linear, visibility 0.2s linear;
-}
-
-ul#navigation ul {
-    top: 0px;
-    left: 1px;
-}
-
-ul#navigation ul li ul {
-    bottom: 100px;
-    left: 181px;
-}
-
-ul#navigation ul li {
-    clear:both;
-    width:100%;
-    border:0 none;
-    border-bottom:1px solid #c9c9c9;
-}
-
-ul#navigation ul li a {
-    background:black;
-    color:#00a8ff;
-    text-shadow:1px 1px 0px #fff;
-    text-decoration:none;
-    display:inline-block;
-    float:left;
-    clear:both;
-}
-
-ul#navigation li a.first {
-    border-left: 0 none;
-}
-
-ul#navigation li a.last {
-    border-right: 0 none;
+#navigation li {
+    display: block;
+    padding: 10px 15px;
 }

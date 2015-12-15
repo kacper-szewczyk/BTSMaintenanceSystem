@@ -8,25 +8,33 @@ $(document).ready(function() {
             $navigation;
         return {
             init: function () {
-                $navigation = $('#popupMenuHandler');
+                $navigation = $('#popupMenuHandlerDiv');
                 var self = this;
                 console.log($navigation);
                 $navigation.click(function () {
-                    alert('sdfsdf');
                     self.openHamburger();
 
                 });
 
                 $('.filterElements a').click(function() {
                     var type = $(this).data('type');
-                    console.log($(this));
                     self.chooseNavElement(type)
+                });
+                $('#navigation .close').click(function() {
+                    self.closeHamburger();
                 });
 
             },
             openHamburger: function () {
                 state = 1;
-                alert('test');
+                $('#navigation').fadeIn();
+
+            },
+            closeHamburger: function () {
+              if (state === 1) {
+                  $('#navigation').fadeOut();
+                  state = 0;
+              }
             },
             chooseNavElement : function(type) {
                 if (type === null) {
