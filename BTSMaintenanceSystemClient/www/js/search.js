@@ -74,6 +74,10 @@ function callAnotherPage() {
     window.location = "html/search.html";
 }
 
+function callRecordPage() {
+    console.log("callAnotherPage");
+    window.location = "record.html";
+}
 function updateHeader(url) {
     var website = "search.html";
     var index = url.indexOf(website);

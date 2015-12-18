@@ -104,3 +104,38 @@ input {
     display: block;
     padding: 10px 15px;
 }
+
+th {
+    background-color: #ffa300;
+    color: #E4E4E4;
+}
+
+tr {
+    background-color: #393939;
+    color: #00a8ff;
+}
+
+button#record {
+    width: 100%;
+    background: transparent;
+    border-bottom-color: #00a8ff;
+}
+
+
+#imageDiv {
+     text-align: left;
+ }
+
+#towerIco {
+    display: flex;
+    float: left;
+}
+#paramsId {
+    display: flex;
+    float: left;
+    color: #ffa300;
+}
+
+div#paramsId a {
+    color: #00a8ff;
+}
