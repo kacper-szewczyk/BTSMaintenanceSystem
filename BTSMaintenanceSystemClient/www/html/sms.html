@@ -5,27 +5,42 @@
     <title>SMS</title>
     <link rel="stylesheet" type="text/css" href="../css/sms.css">
     <script type="text/javascript" src="../js/sms.js"></script>
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="author" content="WebCodeGeeks.com">
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
 </head>
 <body>
 <div id="banner">
-    <div id="bannerLeft">
+    <div id="smsIcoDiv">
         <img src="../img/smsIcoShort.gif">
     </div>
-    <div id="bannerRight">
-        <block id="titleBlock">
-            <strong>SMS</strong>
-        </block>
+    <div id="smsTitleDiv">
+        <strong>SMS</strong>
+        <br>
+        <form id="typeOfMessageForm">
+            <select name="URL" onchange="window.location.href=this.form.URL.options[this.form.URL.selectedIndex].value">
+                <option value="javascript:void(0)">Wejściówka</option>
+                <option value="javascript:void(0)">Kosikówka</option>
+            </select>
+        </form>
+
     </div>
 </div>
-<div id="message">
-
+<div id="messageDiv">
+    <div id="messageInvocation"> TREŚĆ WIADOMOŚCI</div>
+    <textarea name="messageText" id="message" rows="10">
+    Raz dwa trzy kosik patrzy
+    </textarea>
 </div>
 <div id="number">
-
+    <div id="numberInvocation"> NUMER ODBIORCY</div>
+    <p id="telephoneNumber">505 125 640</p>
 </div>
 
 <div id="buttonDiv">
-    jsfiafjs
+    <button id="editNumberButton">Edytuj numer</button>
+    <button id="podgladButton">Podgląd wiadomości</button>
 </div>
 
 </body>

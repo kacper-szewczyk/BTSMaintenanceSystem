@@ -6,15 +6,68 @@ body {
     background-size: auto;
 }
 
-.titleBlock strong{
+#smsTitleDiv strong{
     color: orange;
     font-size: xx-large;
+    font-style: italic;
+    margin-left: 5px;
 }
 
-.bannerLeft {
-    display: inline;
+#smsIcoDiv {
+    display: inline-flex;
+    float: left;
+    height: 10%;
 }
 
-.bannerRight{
-    display: inline;
+#smsTitleDiv{
+    display: inline-flex;
+    color: orange;
+    font-size: xx-large;
+    align-items: center;
+    position: relative;
+    white-space: pre;
+    height: 5%;
+
+}
+
+#typeOfMessageForm select, option{
+    display: inline-flex;
+    background-color: #00a8ff;
+    font-size: large;
+    font-style: italic;
+    color: #E4E4E4;
+    height: 5%;
+}
+
+#messageInvocation, #numberInvocation, #number {
+    color: orange;
+    font-size: medium;
+    font-style: italic;
+    border-bottom: thick solid #00a8ff;
+}
+
+div#number {
+    border-top: thick solid #00a8ff;
+
+}
+
+#editNumberButton {
+    align-items: flex-end;
+}
+
+#telephoneNumber {
+    color: #A7A7A7;
+    font-style: italic;
+}
+
+#messageDiv {
+    width: 100%;
+    height: 50%;
+}
+#message {
+    width: 100%;
+    height: 50%;
+    background: transparent;
+    color: #00a8ff;
+    font-size: medium;
 }
