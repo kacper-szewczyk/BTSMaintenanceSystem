@@ -5,6 +5,7 @@ $(document).ready(function() {
     var SearchModule = (function () {
 
         var state = 0,
+            searchPhrase = "",
             $navigation;
         return {
             init: function () {
@@ -29,7 +30,9 @@ $(document).ready(function() {
                     self.updateHeader('Nazwa PTC');
                 });
                 $('#searchIcoDiv').click(function() {
-                    alert('Kosik jest paskudnym gejem');
+                    searchPhrase = $('#keyWord').val();
+                    alert(searchPhrase);
+                    self.printFoundItems(searchPhrase, 0);
                 });
 
 
@@ -59,9 +62,49 @@ $(document).ready(function() {
             },
             updateHeader: function(headerName) {
                 $('#search_parameter').html(headerName);
+                self.printFoundItems(searchPhrase);
                 $('#navigation').fadeOut();
                 state = 0;
+            },
+            printFoundItems: function(searchPhrase, filteringElem) {
+                var records = getRecordsFromDatabase(searchPhrase, filteringElem);
+                var tableText = createTableOfRecords(records);
+                console.log(tableText);
+                $('#data_id').append(tableText);
+               /* var div = document.createElement('div');
+                div.id = "data_id";
+                div.className = 'wrapper';
+                div.appendChild(document. tableText);
+                document.body.appendChild(div);*/
+/*
+                var myTableDiv = document.getElementById("tableId")
+                var table = document.createElement('TABLE')
+                var tableBody = document.createElement('TBODY')
+
+                table.border = '1'
+                table.appendChild(tableBody);
+
+                var tr = document.createElement('TR');
+                tableBody.appendChild(tr);
+                for (i = 0; i < 2; i++) {
+                    var th = document.createElement('TH')
+                    th.width = '75';
+                    th.appendChild(document.createTextNode("Kosik"));
+                    tr.appendChild(th);
+
+                }
+                for (i = 0; i < 2; i++) {
+                    var tr = document.createElement('TR');
+                    for (j = 0; j < 2; j++) {
+                        var td = document.createElement('TD')
+                        td.appendChild(document.createTextNode("Kosik"));
+                        tr.appendChild(td)
+                    }
+                    tableBody.appendChild(tr);
+                }*/
+
             }
+
         };
     })();
     console.log(SearchModule);
@@ -78,10 +121,24 @@ function callRecordPage() {
     console.log("callAnotherPage");
     window.location = "record.html";
 }
-function updateHeader(url) {
-    var website = "search.html";
-    var index = url.indexOf(website);
 
-    return url.substring(index + website.length, url.length);
+
+function getRecordsFromDatabase(searchPhrase, filteringElem) {
+    var records = ["1", "2", "3", "4", "5"];
+    return records;
+}
+function createTableOfRecords(records) {
+    var recordsText = '<table class="table" cellspacing="0" width="100%" id="tableId">' +
+        '<thead><tr><th><strong>Znalezione rekordy</strong></th></tr>' +
+        '</thead><tbody id="recordsTable"><tr>' +
+        '<td><button id="record" onclick="callRecordPage()">' +
+        '<div id="imageDiv"><img src="../img/towericon.gif" id="towerIco">' +
+        '<div id="paramsId"><a> Kosik: </a>' + records[0] + '<br>' +
+        '<a> Kosik: </a>' + records[1] + '<br>' +
+        '<a> Kosik: </a>' + records[2] + '<br>' +
+        '<a> Kosik: </a>' + records[3] + '<br>' +
+        '<a> Kosik: </a>' + records[4] + '<br>' +
+        '</div></div></button></td></tr></tbody></table>';
+    return recordsText;
 }
 //myObject = updateHeader.call(myObject, "search.html#12");     // Will return 20

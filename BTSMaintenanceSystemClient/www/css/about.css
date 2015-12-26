@@ -1,0 +1,37 @@
+
+body {
+    background-image:  url('../img/background.jpg');
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+
+#moreIcoDiv {
+    display: inline-flex;
+    float: left;
+    height: 15%;
+    width: 100%;
+}
+
+#moreIco {
+    height: 15%;
+}
+
+#moreIcoDiv strong{
+    color: #ffa300;
+    display: inline-flex;
+    float: left;
+    font-size: xx-large;
+    margin-top: 7%;
+    margin-left: 10%;
+}
+
+#textDiv{
+    margin-top: 30%;
+    border-top: thick solid #00a8ff;
+    color: #ffa300;
+    font-size: medium;
+    font-family: "Arial";
+    border-bottom: thick solid #00a8ff;
+    padding-bottom: 15px;
+}

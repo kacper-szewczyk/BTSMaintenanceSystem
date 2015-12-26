@@ -92,11 +92,11 @@ input {
     list-style: none;
     position: fixed;
     width:95%;
-    background: orange;
-    color: #00a8ff;
+    background: #A7A7A7;
+    color: #E4E4E4;
     padding: 10px;
     border-radius: 5px;
-    border:1px solid #ffa300;
+    border:1px solid #00a8ff;
     display: none;
 
 }
