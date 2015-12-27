@@ -23,10 +23,10 @@ $(document).ready(function() {
                 $('#navigation .close').click(function() {
                     self.closeDialogBox();
                 });
-                $('#navigation .nameOfStation').click(function() {
+                $('#navigation #nameOfStation').click(function() {
                     self.updateHeader('Nazwa stacji');
                 });
-                $('#navigation .nameOfPTC').click(function() {
+                $('#navigation #nameOfPTC').click(function() {
                     self.updateHeader('Nazwa PTC');
                 });
                 $('#searchIcoDiv').click(function() {
@@ -67,41 +67,15 @@ $(document).ready(function() {
                 state = 0;
             },
             printFoundItems: function(searchPhrase, filteringElem) {
+                var elem = document.getElementsByClassName('.wrapper');
+                if(elem != null){
+                    console.log("Here");
+                    $('.wrapper #tableId').unwrap();
+                    $('#tableId').remove();
+                }
                 var records = getRecordsFromDatabase(searchPhrase, filteringElem);
                 var tableText = createTableOfRecords(records);
-                console.log(tableText);
                 $('#data_id').append(tableText);
-               /* var div = document.createElement('div');
-                div.id = "data_id";
-                div.className = 'wrapper';
-                div.appendChild(document. tableText);
-                document.body.appendChild(div);*/
-/*
-                var myTableDiv = document.getElementById("tableId")
-                var table = document.createElement('TABLE')
-                var tableBody = document.createElement('TBODY')
-
-                table.border = '1'
-                table.appendChild(tableBody);
-
-                var tr = document.createElement('TR');
-                tableBody.appendChild(tr);
-                for (i = 0; i < 2; i++) {
-                    var th = document.createElement('TH')
-                    th.width = '75';
-                    th.appendChild(document.createTextNode("Kosik"));
-                    tr.appendChild(th);
-
-                }
-                for (i = 0; i < 2; i++) {
-                    var tr = document.createElement('TR');
-                    for (j = 0; j < 2; j++) {
-                        var td = document.createElement('TD')
-                        td.appendChild(document.createTextNode("Kosik"));
-                        tr.appendChild(td)
-                    }
-                    tableBody.appendChild(tr);
-                }*/
 
             }
 
@@ -128,17 +102,31 @@ function getRecordsFromDatabase(searchPhrase, filteringElem) {
     return records;
 }
 function createTableOfRecords(records) {
-    var recordsText = '<table class="table" cellspacing="0" width="100%" id="tableId">' +
-        '<thead><tr><th><strong>Znalezione rekordy</strong></th></tr>' +
-        '</thead><tbody id="recordsTable"><tr>' +
-        '<td><button id="record" onclick="callRecordPage()">' +
-        '<div id="imageDiv"><img src="../img/towericon.gif" id="towerIco">' +
-        '<div id="paramsId"><a> Kosik: </a>' + records[0] + '<br>' +
-        '<a> Kosik: </a>' + records[1] + '<br>' +
-        '<a> Kosik: </a>' + records[2] + '<br>' +
-        '<a> Kosik: </a>' + records[3] + '<br>' +
-        '<a> Kosik: </a>' + records[4] + '<br>' +
-        '</div></div></button></td></tr></tbody></table>';
+    var recordsText = createInvocation();
+    var record = ["1","2","3","4","5","6"];
+    recordsText = recordsText + createRecord(record) +
+               createClosure();
     return recordsText;
+}
+
+function createRecord(record) {
+    return '<tr><td><button id="record" onclick="callRecordPage()">' +
+        '<div id="imageDiv"><img src="../img/towericon.gif" id="towerIco">' +
+        '<div id="paramsId">' +
+        '<a> Miasto: </a>' + record[0] + '<br>' +
+        '<a> Ulica: </a>' + record[1] + '<br>' +
+        '<a> Koordynaty x: </a>' + record[2] + '<br>' +
+        '<a> Koordynaty y: </a>' + record[3] + '<br>' +
+        '<a> Nazwa PTC: </a>' + record[4] + '<br>' +
+        '<a> Nazwa PTK: </a>' + record[5] + '<br>';
+}
+function createInvocation() {
+    return '<table class="table" cellspacing="0" width="100%" id="tableId">' +
+    '<thead><tr><th><strong>Znalezione rekordy</strong></th></tr>' +
+    '</thead><tbody id="recordsTable">';
+}
+
+function createClosure() {
+    return '</div></div></button></td></tr></tbody></table>';
 }
 //myObject = updateHeader.call(myObject, "search.html#12");     // Will return 20

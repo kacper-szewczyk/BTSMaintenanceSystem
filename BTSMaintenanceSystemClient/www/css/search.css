@@ -93,13 +93,22 @@ input {
     position: fixed;
     width:95%;
     background: #A7A7A7;
-    color: #E4E4E4;
     padding: 10px;
     border-radius: 5px;
     border:1px solid #00a8ff;
     display: none;
 
 }
+.category {
+    color: #E4E4E4;
+}
+
+.typeOfCategory {
+    color: #ffa300;
+    border:1px solid #E4E4E4;
+    background-color: #00a8ff;
+}
+
 #navigation li {
     display: block;
     padding: 10px 15px;
@@ -131,11 +140,16 @@ button#record {
     float: left;
 }
 #paramsId {
-    display: flex;
+    display: block;
     float: left;
     color: #ffa300;
+    text-align: right;
+    font-size: x-large;
 }
 
 div#paramsId a {
     color: #00a8ff;
+    text-transform: uppercase;
+    font-size: x-large;
+    text-align: left;
 }
