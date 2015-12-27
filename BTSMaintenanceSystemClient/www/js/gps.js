@@ -14,9 +14,25 @@ function onSuccess(position) {
         'Speed: '              + position.coords.speed                 + '<br />' +
         'Timestamp: '          +                                   position.timestamp          + '<br />';
 
+    printFoundItems("a",0);
+
 }
 
 function onError(error) {
     alert('code: '    + error.code    + '\n' +
         'message: ' + error.message + '\n');
+}
+
+
+function printFoundItems(searchPhrase, filteringElem) {
+    var elem = document.getElementsByClassName('.wrapper');
+    if(elem != null){
+        console.log("Here");
+        $('.wrapper #tableId').unwrap();
+        $('#tableId').remove();
+    }
+    var records = getRecordsFromDatabase(searchPhrase, filteringElem);
+    var tableText = createTableOfRecords(records);
+    $('#data_id').append(tableText);
+
 }

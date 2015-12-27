@@ -140,16 +140,28 @@ button#record {
     float: left;
 }
 #paramsId {
+    width: 70%;
     display: block;
     float: left;
     color: #ffa300;
     text-align: right;
     font-size: x-large;
+    padding-left: 5%;
 }
 
 div#paramsId a {
     color: #00a8ff;
     text-transform: uppercase;
-    font-size: x-large;
+    font-size: medium;
     text-align: left;
+    float: left;
 }
+
+div#paramsId b {
+    text-transform: uppercase;
+    font-size: medium;
+    text-align: right;
+    float: right;
+}
+
+

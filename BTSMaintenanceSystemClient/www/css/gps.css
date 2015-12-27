@@ -23,15 +23,65 @@ body {
     height: 10%;
     margin-bottom: 5px;
 }
-p {
-    color: white;
-}
-table {
-    display: table;
-    border-collapse: separate;
-    border-spacing: 2px;
-    border-color: black;
-    color: yellow;
-    font-size: large;
 
+button {
+    display: inline;
+    clear: both;
+    background-size: contain;
+    background-position: left;
+    transition: 300ms all;
+    background-color: inherit;
+    background-repeat: no-repeat;
 }
+
+th {
+    background-color: #ffa300;
+    color: #E4E4E4;
+}
+
+tr {
+    background-color: #393939;
+    color: #00a8ff;
+}
+
+button#record {
+    width: 100%;
+    background: transparent;
+    border-bottom-color: #00a8ff;
+}
+
+
+#imageDiv {
+    text-align: left;
+}
+
+#towerIco {
+    display: flex;
+    float: left;
+}
+#paramsId {
+    width: 70%;
+    display: block;
+    float: left;
+    color: #ffa300;
+    text-align: right;
+    font-size: x-large;
+    padding-left: 5%;
+}
+
+div#paramsId a {
+    color: #00a8ff;
+    text-transform: uppercase;
+    font-size: medium;
+    text-align: left;
+    float: left;
+}
+
+div#paramsId b {
+    text-transform: uppercase;
+    font-size: medium;
+    text-align: right;
+    float: right;
+}
+
+
