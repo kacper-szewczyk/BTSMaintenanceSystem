@@ -17,7 +17,10 @@
 	<!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
 	<plugin name="cordova-plugin-whitelist" spec="1" />
     <plugin name="Geolocation" value="org.apache.cordova.GeoBroker" />
-	<access origin="*" />
+	<plugin name="com.brodysoft.sqliteplugin" spec="1.0.6" source="pgb" />
+	<plugin name="SQLitePlugin" value="SQLitePlugin" />
+	<plugin name="App" value="org.apache.cordova.App"/>
+    <access origin="*" />
 	<allow-intent href="http://*/*" />
 	<allow-intent href="https://*/*" />
 	<allow-intent href="tel:*" />
@@ -43,5 +46,8 @@
 		<allow-intent href="itms-apps:*" />
 	</platform>
 	<engine name="android" version="4.1.1" />
-	
+	<feature name="Storage">
+		<param name="android-package" value="org.apache.cordova.Storage" />
+	</feature>
+
 </widget>

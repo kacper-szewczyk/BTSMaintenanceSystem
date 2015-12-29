@@ -1,14 +1,19 @@
 /**
  *
  */
+
+
+
 $(document).ready(function() {
     var SearchModule = (function () {
 
         var state = 0,
             searchPhrase = "",
-            $navigation;
+            $navigation,
+            db = null;
         return {
             init: function () {
+                //db = window.sqlitePlugin.openDatabase({name: "base.db"});
                 $navigation = $('#popupMenuHandlerDiv');
                 var self = this;
                 console.log($navigation);
@@ -69,11 +74,10 @@ $(document).ready(function() {
             printFoundItems: function(searchPhrase, filteringElem) {
                 var elem = document.getElementsByClassName('.wrapper');
                 if(elem != null){
-                    console.log("Here");
                     $('.wrapper #tableId').unwrap();
                     $('#tableId').remove();
                 }
-                var records = getRecordsFromDatabase(searchPhrase, filteringElem);
+                var records = getRecordsFromDatabase(searchPhrase, filteringElem, db);
                 var tableText = createTableOfRecords(records);
                 $('#data_id').append(tableText);
 
@@ -81,10 +85,8 @@ $(document).ready(function() {
 
         };
     })();
-    console.log(SearchModule);
     SearchModule.init();
 });
-
 
 function callAnotherPage() {
     console.log("callAnotherPage");
