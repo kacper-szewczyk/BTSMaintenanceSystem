@@ -131,15 +131,16 @@ button#record {
 }
 
 
-#imageDiv {
+.imageDiv {
      text-align: left;
  }
 
-#towerIco {
+.towerIco {
     display: flex;
     float: left;
 }
-#paramsId {
+
+.paramsId {
     width: 70%;
     display: block;
     float: left;
@@ -149,7 +150,7 @@ button#record {
     padding-left: 5%;
 }
 
-div#paramsId a {
+.paramsId a {
     color: #00a8ff;
     text-transform: uppercase;
     font-size: medium;
@@ -157,7 +158,7 @@ div#paramsId a {
     float: left;
 }
 
-div#paramsId b {
+.paramsId b {
     text-transform: uppercase;
     font-size: medium;
     text-align: right;

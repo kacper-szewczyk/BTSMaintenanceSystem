@@ -6,6 +6,7 @@ body {
 }
 
 
+
 #moreIcoDiv {
     display: inline-flex;
     float: left;
@@ -14,7 +15,11 @@ body {
 }
 
 #moreIco {
-    height: 15%;
+    width: 100%;
+    height: auto;
+    max-width: 484px;
+    max-height: 170px;
+    float: left;
 }
 
 #moreIcoDiv strong{
@@ -23,7 +28,6 @@ body {
     float: left;
     font-size: xx-large;
     margin-top: 7%;
-    margin-left: 10%;
 }
 
 #textDiv{
@@ -34,4 +38,11 @@ body {
     font-family: "Arial";
     border-bottom: thick solid #00a8ff;
     padding-bottom: 15px;
+    vertical-align: middle;
+}
+
+
+footer {
+    color: darkgoldenrod;
+    vertical-align: bottom;
 }

@@ -26,16 +26,16 @@ body {
     height: 100%;
 }
 
-#imageDiv {
+.imageDiv {
     text-align: left;
 }
 
-#towerIco {
+.towerIco {
     display: flex;
     float: left;
 }
 
-#paramsId {
+.paramsId {
     width: 70%;
     display: block;
     float: left;
@@ -45,7 +45,7 @@ body {
     padding-left: 5%;
 }
 
-div#paramsId a {
+.paramsId a {
     color: #00a8ff;
     text-transform: uppercase;
     font-size: medium;
@@ -53,7 +53,7 @@ div#paramsId a {
     float: left;
 }
 
-div#paramsId b {
+.paramsId b {
     text-transform: uppercase;
     font-size: medium;
     text-align: right;
@@ -62,19 +62,20 @@ div#paramsId b {
 #main {
     vertical-align: middle;
 }
-#extraParamsId {
+
+.extraParamsId {
 
     width: 100%;
     display: block;
     float: left;
-    color: #ffa300;
-    text-align: right;
+    color: #00a8ff;
+    text-align: left;
     font-size: x-large;
     border-bottom: 1px #00a8ff solid;
     border-top: 1px #00a8ff solid;
 }
 
-div#extraParamsId a {
+.extraParamsId a {
     color: #00a8ff;
     text-transform: uppercase;
     font-size: medium;
@@ -82,14 +83,15 @@ div#extraParamsId a {
     float: left;
 }
 
-div#extraParamsId b {
+.extraParamsId b {
+    color: #ffa300;
     text-transform: uppercase;
     font-size: medium;
     text-align: right;
     float: right;
 
 }
-div#extraParamsId b:before {
+.extraParamsId b:before {
     white-space: nowrap;
     content:
             ". . . . . . . . . . . . . . . . . . . . "
@@ -137,7 +139,7 @@ div#extraParamsId b:before {
     border: none;
     height: auto;
     min-height: 10%;
-    background-color: Transparent;
+    background-color: transparent;
 
 }
 

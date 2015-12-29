@@ -89,8 +89,8 @@ function createRowWithRecord(record) {
         + createRecord(record) +  '</div></div></button>';
 }
 function createRecord(record) {
-    return '<div id="imageDiv"><img src="../img/towericon.gif" id="towerIco">' +
-        '<div id="paramsId">' +
+    return '<div class="imageDiv"><img src="../img/towericon.gif" class="towerIco">' +
+        '<div class="paramsId">' +
         '<a align="left"> Miasto: </a><b align="right">' + record[0] + '</b><br>' +
         '<a align="left"> Ulica: </a><b align="right">' + record[1] + '</b><br>' +
         '<a align="left"> Koordynaty x: </a><b align="right">' + record[2] + '</b><br>' +
@@ -109,14 +109,14 @@ function createClosure() {
 }
 
 function createMoreInfo(record) {
-    return '<div id="extraParamsId">' +
+    return '<div class="extraParamsId">' +
         '<a align="left"> Nrnet: </a><b>' + record[0] + '</b><br>' +
         '<a align="left"> Właściciel: </a><b>' + record[1] + '</b><br>' +
         '<a align="left"> Wysokość NPM: </a><b>' + record[2] + '</b><br>' +
         '<a align="left"> Nazwa TPK: </a><b>' + record[3] + '</b><br>' +
         '<a align="left"> Region: </a><b>' + record[4] + '</b><br>' +
         '<a align="left"> Kod pocztowy: </a><b>' + record[5] + '</b><br>' +
-        '<a align="left"> Województwo: </a><b>' + record[4] + '</b><br>' +
-        '<a align="left"> Wysokość budynku </a><b>' + record[5] + '</b><br>' +
-        '<a align="left"> Nazwa: </a><b>' + record[4] + '</b><br>';
+        '<a align="left"> Województwo: </a><b>' + record[6] + '</b><br>' +
+        '<a align="left"> Wysokość budynku </a><b>' + record[7] + '</b><br>' +
+        '<a align="left"> Nazwa: </a><b>' + record[8] + '</b><br>';
 }
