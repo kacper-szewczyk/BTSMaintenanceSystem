@@ -1,0 +1,174 @@
+@CHARSET "UTF-8";
+
+
+body {
+    background-image:  url('../img/background.jpg');
+    background-repeat: repeat;
+    background-size: auto;
+
+}
+
+#bannerId {
+    vertical-align: top;
+}
+
+
+#smsButton, #navButton, #callButton {
+    background-size: contain;
+    border: none;
+    width: 14%;
+
+}
+
+#sectionId {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#imageDiv {
+    text-align: left;
+}
+
+#towerIco {
+    display: flex;
+    float: left;
+}
+
+#paramsId {
+    width: 70%;
+    display: block;
+    float: left;
+    color: #ffa300;
+    text-align: right;
+    font-size: x-large;
+    padding-left: 5%;
+}
+
+div#paramsId a {
+    color: #00a8ff;
+    text-transform: uppercase;
+    font-size: medium;
+    text-align: left;
+    float: left;
+}
+
+div#paramsId b {
+    text-transform: uppercase;
+    font-size: medium;
+    text-align: right;
+    float: right;
+}
+#main {
+    vertical-align: middle;
+}
+#extraParamsId {
+
+    width: 100%;
+    display: block;
+    float: left;
+    color: #ffa300;
+    text-align: right;
+    font-size: x-large;
+    border-bottom: 1px #00a8ff solid;
+    border-top: 1px #00a8ff solid;
+}
+
+div#extraParamsId a {
+    color: #00a8ff;
+    text-transform: uppercase;
+    font-size: medium;
+    text-align: left;
+    float: left;
+}
+
+div#extraParamsId b {
+    text-transform: uppercase;
+    font-size: medium;
+    text-align: right;
+    float: right;
+
+}
+div#extraParamsId b:before {
+    white-space: nowrap;
+    content:
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+}
+
+
+
+#footerId {
+    clear: left;
+    vertical-align: bottom;
+    width: 100%;
+    height: 15%;
+    align-items: center;
+    display: inline-flex;
+    float: left;
+}
+
+#footerId button {
+    position: absolute;
+    display: inline-block;
+    float: left;
+    clear: both;
+    background-size: contain;
+    background-position: center;
+    margin-top: 5px;
+    margin-left: 15%;
+    transition: 300ms all;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    border: none;
+    height: auto;
+    min-height: 10%;
+    background-color: Transparent;
+
+}
+
+#footerId button:after {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+#footerId button:hover {
+    transform: scale(1.05, 1.05);
+}
+
+#smsButton{
+    background-image: url("../img/smsIcoShort.gif");
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-left: 15%;
+}
+
+#navButton {
+    margin-left: 40%;
+    background-image: url("../img/smsIcoShort.gif");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#callButton {
+    margin-left: 65%;
+    background-image: url("../img/telephone.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}

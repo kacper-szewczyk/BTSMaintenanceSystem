@@ -93,9 +93,9 @@ function callAnotherPage() {
     window.location = "html/search.html";
 }
 
-function callRecordPage() {
+function callRecordPage(id) {
     console.log("callAnotherPage");
-    window.location = "record.html";
+    window.location = "record.html#"+id;
 }
 
 //myObject = updateHeader.call(myObject, "search.html#12");     // Will return 20
