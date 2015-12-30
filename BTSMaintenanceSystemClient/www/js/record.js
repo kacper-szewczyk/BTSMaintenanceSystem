@@ -19,14 +19,14 @@ $(document).ready(function() {
 });
 
 function sendSms() {
-
+    alert("1 Kosik went wrong");
 }
 
 function navigate() {
-
+    alert("2 Kosik went wrong");
 }
 
 function makeCall() {
-
+    alert("3 Kosik went wrong");
 }
 

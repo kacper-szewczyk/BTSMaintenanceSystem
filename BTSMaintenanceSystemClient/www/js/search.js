@@ -77,7 +77,8 @@ $(document).ready(function() {
                     $('.wrapper #tableId').unwrap();
                     $('#tableId').remove();
                 }
-                var records = getRecordsFromDatabase(searchPhrase, filteringElem, db);
+                /*var records = getRecordsFromDatabase(searchPhrase, filteringElem, db);*/
+                var records = ["Kosik1","Kosik2","Kosik3","Kosik4","Kosik5","Kosik6"];
                 var tableText = createTableOfRecords(records);
                 $('#data_id').append(tableText);
 

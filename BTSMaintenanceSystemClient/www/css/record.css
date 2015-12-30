@@ -33,29 +33,30 @@ body {
 .towerIco {
     display: flex;
     float: left;
+    transform: scale(0.85,0.85);
 }
 
 .paramsId {
-    width: 70%;
+    width: 60%;
     display: block;
     float: left;
     color: #ffa300;
     text-align: right;
     font-size: x-large;
-    padding-left: 5%;
+    padding-left: 1%;
 }
 
 .paramsId a {
     color: #00a8ff;
     text-transform: uppercase;
-    font-size: medium;
+    font-size: small;
     text-align: left;
     float: left;
 }
 
 .paramsId b {
     text-transform: uppercase;
-    font-size: medium;
+    font-size: small;
     text-align: right;
     float: right;
 }
@@ -132,7 +133,6 @@ body {
     background-size: contain;
     background-position: center;
     margin-top: 5px;
-    margin-left: 15%;
     transition: 300ms all;
     margin-bottom: 10px;
     background-repeat: no-repeat;
