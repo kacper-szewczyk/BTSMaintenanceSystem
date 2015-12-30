@@ -49,16 +49,16 @@ input {
 }
 
 #input_wrapper {
-    width: 70%;
+    width: 100%;
     overflow: hidden;
     height: auto;
     display:inline;
 }
 #input_wrapper input[type=text] {
     float: left;
+    width: 60%;
 }
 #popupMenuHandler {
-    width: 50%;
     height: auto;
     border: none;
     display: inline-flex;
@@ -69,7 +69,7 @@ input {
     display: inline-flex;
     float: left;
     position: relative;
-    left: -15px;
+    left: -17px;
 }
 
 #imageHandler {
@@ -104,9 +104,14 @@ input {
 }
 
 .typeOfCategory {
-    color: #ffa300;
+    color: #E4E4E4;
     border:1px solid #E4E4E4;
     background-color: #00a8ff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: large;
+    font-family: Arial;
+
 }
 
 #navigation li {
