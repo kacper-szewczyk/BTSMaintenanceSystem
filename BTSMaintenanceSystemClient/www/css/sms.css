@@ -13,6 +13,9 @@ body {
     margin-left: 5px;
 }
 
+#banner {
+    display: inline-flex;
+}
 #smsIcoDiv {
     display: inline-flex;
     float: left;
@@ -20,13 +23,12 @@ body {
 }
 
 #smsTitleDiv{
-    display: inline-flex;
+    display: inline-block;
     color: orange;
     font-size: xx-large;
     align-items: center;
     position: relative;
-    white-space: pre;
-    height: 5%;
+    margin-left: 10%;
 }
 
 #typeOfMessageForm select, option{
@@ -59,12 +61,11 @@ div#number {
     border: none;
     position: relative;
     color: #E4E4E4;
-    font-size: x-large;
+    font-size: large;
     font-style: italic;
     padding: 5%;
     margin-top: 3px;
-    margin-bottom: 2px;
-    right: 6px;
+    margin-bottom: 6px;
 }
 
 #telephoneNumber {
@@ -87,9 +88,19 @@ div#number {
 
 #lookUpButton {
     height: 15%;
-    float: inherit;
-    background: transparent;
+    width: 100%;
+    float: left;
+    background-color: #00a8ff;
     border: none;
+    text-align: center;
+}
+
+#lookUpButton image{
+    height: 15%;
+    float: inherit;
+    background-color: #00a8ff;
+    border: none;
+    position:relative;
 }
 
 .buttonDiv button {
@@ -125,5 +136,13 @@ div#number {
 #lookUpImage {
     position: relative;
     width: 100%;
+    height: 100%;
+    max-width: 681px;
+    max-height: 164px;
     margin: 0 auto;
+}
+
+#pageId {
+    width: 100%;
+    height: 100%;
 }
