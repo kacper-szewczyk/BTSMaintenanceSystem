@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>SMS</title>
     <link rel="stylesheet" type="text/css" href="../css/sms.css">
-    <script type="text/javascript" src="../js/sms.js"></script>
     <meta name="description" content="Free Web tutorials">
     <meta name="keywords" content="HTML,CSS">
     <meta name="author" content="WebCodeGeeks.com">
     <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/sms.js"></script>
 </head>
 <body>
 <div id="pageId">
@@ -22,9 +22,9 @@
             <br>
             <form id="typeOfMessageForm">
                 <select name="URL" onchange="window.location.href=this.form.URL.options[this.form.URL.selectedIndex].value">
-                    <option value="javascript:void(0)">Wejściówka</option>
-                    <option value="javascript:void(0)">Wyjściówka</option>
-                    <option value="javascript:void(0)">Alarm</option>
+                    <option value="javascript:void(0)" id="entryMessage">Wejściówka</option>
+                    <option value="javascript:void(0)" id="exitMessage">Wyjściówka</option>
+                    <option value="javascript:void(0)" id="alarmMessage">Alarm</option>
                 </select>
             </form>
 

@@ -5,6 +5,15 @@ $(document).ready(function() {
         return {
             init: function () {
                 document.getElementById("telephoneNumber").innerHTML = "505 125 640";
+
+                $("#editNumberButton").click(function(){
+                    alert("Nie zmienisz numeru kosika");
+                });
+
+                $("#lookUpButton").click(function(){
+                    alert("Nie wiem co to miało robić");
+                });
+
             }
         };
     })();

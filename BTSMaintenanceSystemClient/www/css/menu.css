@@ -45,18 +45,23 @@ button {
 #search_button {
 	background-image: url(../img/Searchico.gif);
 }
+
 #sms_button {
 	background-image: url(../img/smsico.gif);
 }
+
 #gps_search_button {
 	background-image: url(../img/gpsico.gif);
 }
+
 #duties_button {
 	background-image: url(../img/dyzico.gif);
 }
+
 #update_button {
 	background-image: url(../img/updateico.gif);
 }
+
 #about_button {
 	background-image: url(../img/moreico.gif);
 }

@@ -24,7 +24,8 @@ function callDutiesPage() {
 
 function callUpdatePage() {
 	console.log("callUpdatePage");
-	window.location = "update.html";
+	alert("Not available in current version")
+	//window.location = "update.html";
 }
 
 function callAboutPage() {
