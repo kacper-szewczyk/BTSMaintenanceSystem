@@ -4,8 +4,8 @@ $(document).ready(function() {
         var state = 0;
         return {
             init: function () {
-                document.getElementById("telephoneNumber").innerHTML = "693948562";
-
+                document.getElementById("telephoneNumber").innerHTML = "+48693112193";
+                //document.getElementById("telephoneNumber").innerHTML = "+48693948562";
                 $("#editNumberButton").click(function(){
                     alert("Nie zmienisz numeru kosika ");
 
@@ -15,9 +15,11 @@ $(document).ready(function() {
                     alert("Nie wiem co to miało robić");
                     var telephoneNumber = document.getElementById('telephoneNumber').innerHTML;
                     telephoneNumber = reduceWhitespaces(telephoneNumber);
-                    sendSms(telephoneNumber,"No jarosław");
+                    var message = document.getElementById('message').innerHTML;
+                    console.log(message);
+                    sendSms(telephoneNumber,message);
                 });
-                
+
                 $("#typeOfMessageSelect").change(function () {
                     $( "#typeOfMessageSelect option:selected").each(function() {
                         alert($(this).text());
@@ -39,16 +41,7 @@ function reduceWhitespaces(number) {
 }
 
 function sendSms(number, message) {
-    //CONFIGURATION
-    var options = {
-        replaceLineBreaks: false, // true to replace \n by a new line, false by default
-        android: {
-            intent: 'INTENT'  // send SMS with the native android SMS messaging
-            //intent: '' // send SMS without open any other app
-        }
-    };
-
-    var success = function () { alert('Message sent successfully'); };
-    var error = function (e) { alert('Message Failed:' + e); };
-    sms.send(number, message, options, success, error);
+    if(SMS) {
+        SMS.sendSMS(number, message, function(){}, function(){});
+    }
 }
