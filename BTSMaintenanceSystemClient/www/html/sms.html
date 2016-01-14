@@ -21,7 +21,7 @@
             <br>
             <br>
             <form id="typeOfMessageForm">
-                <select name="URL" onchange="window.location.href=this.form.URL.options[this.form.URL.selectedIndex].value">
+                <select name="URL" onchange="window.location.href=this.form.URL.options[this.form.URL.selectedIndex].value" id="typeOfMessageSelect">
                     <option value="javascript:void(0)" id="entryMessage">Wejściówka</option>
                     <option value="javascript:void(0)" id="exitMessage">Wyjściówka</option>
                     <option value="javascript:void(0)" id="alarmMessage">Alarm</option>
@@ -38,7 +38,7 @@
     </div>
     <div id="number">
         <div id="numberInvocation"> NUMER ODBIORCY</div>
-        <p id="telephoneNumber">505 125 640</p>
+        <p id="telephoneNumber"></p>
     </div>
 
     <div id="buttonDiv">
