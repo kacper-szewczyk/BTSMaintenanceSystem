@@ -68,10 +68,15 @@ div#number {
     margin-bottom: 6px;
 }
 
-#telephoneNumber {
+#telephoneNumber, #numberDiv {
     color: #A7A7A7;
     font-style: italic;
     font-size: x-large;
+    background: transparent;
+    border: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 3%;
 }
 
 #messageDiv {
@@ -145,4 +150,8 @@ div#number {
 #pageId {
     width: 100%;
     height: 100%;
+}
+
+#numberDiv {
+    display: inline-flex;
 }
