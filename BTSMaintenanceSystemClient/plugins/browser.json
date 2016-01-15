@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "bts.maintenance.system.client"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "bts.maintenance.system.client"
+        },
+        "com.brodysoft.sqlitePlugin": {
+            "PACKAGE_NAME": "bts.maintenance.system.client"
+        }
+    },
+    "dependent_plugins": {}
+}

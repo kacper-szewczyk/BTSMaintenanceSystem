@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SMS</title>
+    <link rel="stylesheet" type="text/css" href="../css/sms.css">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="author" content="WebCodeGeeks.com">
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/sms.js"></script>
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../../plugins/cordova-plugin-sms/www/SMS.js"></script>
+</head>
+<body>
+<div id="pageId">
+    <div id="banner">
+        <div id="smsIcoDiv">
+            <img src="../img/smsIcoShort.gif">
+        </div>
+        <div id="smsTitleDiv">
+            <strong>SMS</strong>
+            <br>
+            <br>
+            <form id="typeOfMessageForm">
+                <select name="URL" onchange="window.location.href=this.form.URL.options[this.form.URL.selectedIndex].value" id="typeOfMessageSelect">
+                    <option value="javascript:void(0)" id="entryMessage">Wejściówka</option>
+                    <option value="javascript:void(0)" id="exitMessage">Wyjściówka</option>
+                    <option value="javascript:void(0)" id="alarmMessage">Alarm</option>
+                </select>
+            </form>
+
+        </div>
+    </div>
+    <div id="messageDiv">
+        <div id="messageInvocation"> TREŚĆ WIADOMOŚCI</div>
+        <textarea name="messageText" id="message" rows="10">Gejem się jest tylko dwa razy
+        </textarea>
+    </div>
+    <div id="number">
+        <div id="numberInvocation"> NUMER ODBIORCY</div>
+        <p id="telephoneNumber"></p>
+    </div>
+
+    <div id="buttonDiv">
+        <button id="editNumberButton">Edytuj numer</button>
+        <button id="lookUpButton"><img src="../img/smsButtonLookUp.jpg" id="lookUpImage"></button>
+    </div>
+</div>
+</body>
+</html>

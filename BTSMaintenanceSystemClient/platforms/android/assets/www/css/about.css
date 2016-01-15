@@ -1,0 +1,43 @@
+
+body {
+    background-image: url("../img/moreico.gif");
+    background-size: 70% auto;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-color: #181818;
+
+}
+
+header{
+    overflow: hidden;
+}
+
+
+#moreIco {
+    width: 100%;
+    height: auto;
+    max-width: 484px;
+    max-height: 170px;
+    float: left;
+
+}
+
+
+#textDiv{
+    margin-top: 30%;
+    border-top: thick solid #00a8ff;
+    color: #ffa300;
+    font-size: medium;
+    font-family: "Arial";
+    border-bottom: thick solid #00a8ff;
+    padding-bottom: 15px;
+    vertical-align: middle;
+    background-color: #202020;
+}
+
+
+footer {
+    color: darkgoldenrod;
+    vertical-align: bottom;
+    overflow: hidden;
+}

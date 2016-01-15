@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Wyszukaj</title>
+    <link rel="stylesheet" type="text/css" href="../css/search.css">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="author" content="WebCodeGeeks.com">
+    <script type="text/javascript" charset="utf-8" src="../../cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../js/require.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../js/SQL.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/databaseLinkersAndPrinters.js"></script>
+    <script type="text/javascript" src="../js/search.js"></script>
+
+
+</head>
+<body>
+<div id="header_id">
+    <header id="headerHandler">
+        <strong>Wyszukaj: <a id="search_parameter"></a></strong>
+    </header>
+    <div id="input_wrapper">
+        <input type="text" name="searchText" id="keyWord">
+
+        <div id="searchIcoDiv">
+            <button type="button" id="searchHandler"><img src="../img/Searchico.jpg" id="searchImageHandler"></button>
+        </div>
+        <div id="popupMenuHandlerDiv">
+            <nav id="nav">
+                <button type="button" id="popupMenuHandler"><img src="../img/spinnerico.gif" id="imageHandler"></button>
+
+            </nav>
+        </div>
+    </div>
+
+
+</div>
+
+<ul id="navigation">
+    <li><a data-type="station" class="category">Po stacji &raquo;</a>
+        <ul>
+            <li><a id="nameOfStation" class="typeOfCategory" href="javascript:void(0)">Nazwa stacji</a></li>
+            <li><a id="nameOfPTC" class="typeOfCategory" href="javascript:void(0)">Nazwa PTC</a></li>
+        </ul>
+    </li>
+    <li><a data-type="localization" class="category">Po lokalizacji &raquo;</a>
+        <ul>
+            <li><a id="city" class="typeOfCategory" href="javascript:void(0)">Miejscowość</a></li>
+            <li><a id="region" class="typeOfCategory" href="javascript:void(0)">Region</a></li>
+        </ul>
+    </li>
+    <li class="close">
+        <a href="javascript:void(0);" class="typeOfCategory" >Zamknij</a>
+    </li>
+</ul>
+
+
+
+<div id="data_id">
+
+</div>
+
+
+
+
+</body>
+
+</html>

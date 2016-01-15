@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+
+body {
+    background-color: #000000;
+
+}
+.invisible_button{
+    height:100%;
+    width: 100%;
+    position: fixed;
+    opacity: 1.0;
+    background-image: url('../res/screen/Intro.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#menu_button {
+    height:100%;
+    width: 100%;
+    margin: 0;
+    background: transparent;
+    border: none;
+}
