@@ -4,25 +4,38 @@ $(document).ready(function() {
         var state = 0;
         return {
             init: function () {
-                document.getElementById("telephoneNumber").innerHTML = "+48693112193";
+                document.getElementById("telephoneNumber").value = "48693112193";
                 //document.getElementById("telephoneNumber").innerHTML = "+48693948562";
+                document.getElementById('message').value = "Gejem się jest tylko dwa razy";
                 $("#editNumberButton").click(function(){
-                    alert("Nie zmienisz numeru kosika ");
-
+                    var value = document.getElementById("telephoneNumber").value;
+                    if( value.length != 11 ){
+                        alert("Zły numer");
+                    }
                 });
 
                 $("#lookUpButton").click(function(){
-                    alert("Nie wiem co to miało robić");
                     var telephoneNumber = document.getElementById('telephoneNumber').innerHTML;
                     telephoneNumber = reduceWhitespaces(telephoneNumber);
-                    var message = document.getElementById('message').innerHTML;
+                    telephoneNumber = '+' + reduceWhitespaces(telephoneNumber);
+                    var message = document.getElementById('message').value;
                     console.log(message);
                     sendSms(telephoneNumber,message);
                 });
 
                 $("#typeOfMessageSelect").change(function () {
                     $( "#typeOfMessageSelect option:selected").each(function() {
-                        alert($(this).text());
+                        switch($(this).text()) {
+                            case "Wejściówka":
+                                document.getElementById('message').value = getEntryText();
+                                break;
+                            case "Wyjściówka":
+                                document.getElementById('message').value = getExitText();
+                                break;
+                            case "Alarm":
+                                document.getElementById('message').value = getAlarmText();
+                                break;
+                        }
                     });
                 });
             }
@@ -44,4 +57,16 @@ function sendSms(number, message) {
     if(SMS) {
         SMS.sendSMS(number, message, function(){}, function(){});
     }
+}
+
+function getEntryText() {
+    return "Gejem się jest tylko dwa razy";
+}
+
+function getExitText() {
+    return "Raz dwa trzy Kosik patrzy";
+}
+
+function getAlarmText() {
+    return "No Jarosław";
 }

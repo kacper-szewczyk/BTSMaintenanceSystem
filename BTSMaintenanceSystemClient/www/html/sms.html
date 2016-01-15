@@ -34,12 +34,13 @@
     </div>
     <div id="messageDiv">
         <div id="messageInvocation"> TREŚĆ WIADOMOŚCI</div>
-        <textarea name="messageText" id="message" rows="10">Gejem się jest tylko dwa razy
+        <textarea name="messageText" id="message" rows="10">
         </textarea>
     </div>
     <div id="number">
         <div id="numberInvocation"> NUMER ODBIORCY</div>
-        <p id="telephoneNumber"></p>
+        <div id="numberDiv"><p>+</p><input id="telephoneNumber" onkeypress="return event.charCode >= 48 && event.charCode <= 57"></div>
+
     </div>
 
     <div id="buttonDiv">
