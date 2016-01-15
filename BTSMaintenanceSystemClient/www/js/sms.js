@@ -15,11 +15,9 @@ $(document).ready(function() {
                 });
 
                 $("#lookUpButton").click(function(){
-                    var telephoneNumber = document.getElementById('telephoneNumber').innerHTML;
-                    telephoneNumber = reduceWhitespaces(telephoneNumber);
-                    telephoneNumber = '+' + reduceWhitespaces(telephoneNumber);
+                    var telephoneNumber = document.getElementById('telephoneNumber').value;
+                    telephoneNumber = "+".concat(reduceWhitespaces(telephoneNumber));
                     var message = document.getElementById('message').value;
-                    console.log(message);
                     sendSms(telephoneNumber,message);
                 });
 
@@ -60,13 +58,13 @@ function sendSms(number, message) {
 }
 
 function getEntryText() {
-    return "Gejem się jest tylko dwa razy";
+    return "Wchodzę na stację";
 }
 
 function getExitText() {
-    return "Raz dwa trzy Kosik patrzy";
+    return "Wychodzę ze stacji";
 }
 
 function getAlarmText() {
-    return "No Jarosław";
+    return "Alarm";
 }
