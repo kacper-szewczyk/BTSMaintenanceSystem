@@ -40,6 +40,22 @@ body {
     height: 5%;
 }
 
+#typeOfTemplateForm {
+    position: relative;
+    margin-top: 5%;
+}
+
+#typeOfTemplateForm select, option{
+    display: inline-flex;
+    background-color: #00a8ff;
+    font-size: large;
+    font-style: italic;
+    color: #E4E4E4;
+    height: 5%;
+    margin-bottom: 1%;
+    float: right;
+}
+
 #messageInvocation, #numberInvocation, #number {
     color: orange;
     font-size: medium;
@@ -154,4 +170,27 @@ div#number {
 
 #numberDiv {
     display: inline-flex;
+}
+
+#saveSmsButton {
+    float: left;
+    margin-left: 5%;
+    width: 50%;
+    height: 10%;
+    background-color: #00a8ff;
+    border: none;
+    position: relative;
+    color: #E4E4E4;
+    font-size: large;
+    font-style: italic;
+    padding: 5%;
+    margin-top: 3px;
+    margin-bottom: 6px;
+}
+
+#messageFooterDiv {
+    display: inline-flex;
+    overflow: auto;
+    position: relative;
+    width: 100%;
 }

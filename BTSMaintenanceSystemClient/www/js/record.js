@@ -1,12 +1,9 @@
 $(document).ready(function() {
     var SearchModule = (function () {
 
-        var state = 0,
-            db = null;
+        checkDatabase();
         return {
             init: function () {
-                //db = window.sqlitePlugin.openDatabase({name: "base.db"});
-                var self = this;
                 var record = ["1","2","3asflkj","4","5","6"];
                 var record2 = ["1","2","3asflkj","4","5","6","7","8","Kosik"]
                 $('#bannerId').append(createRecord(record));
@@ -18,15 +15,31 @@ $(document).ready(function() {
     SearchModule.init();
 });
 
-function sendSms() {
-    alert("1 Kosik went wrong");
+function sendEntrySms() {
+    getTelephoneNumber();
+    getEntryText();
+    sendSms(telephoneNumber,entryMessage);
+}
+
+
+function sendExitSms() {
+    getTelephoneNumber();
+    getExitText();
+    sendSms(telephoneNumber,exitMessage);
+}
+
+
+function sendAlarmSms() {
+    getTelephoneNumber();
+    getAlarmText();
+    sendSms(telephoneNumber,alarmMessage);
 }
 
 function navigate() {
-    alert("2 Kosik went wrong");
+    alert("Not implemented in current version");
 }
 
 function makeCall() {
-    alert("3 Kosik went wrong");
+    alert("Not implemented in current version");
 }
 
