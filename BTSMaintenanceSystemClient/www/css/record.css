@@ -13,7 +13,7 @@ body {
 }
 
 
-#smsEntryButton, #smsExitButton, #smsAlarmButton, #navButton, #callButton {
+#smsButton, #navButton, #callButton {
     background-size: contain;
     border: none;
     width: 14%;
@@ -154,38 +154,22 @@ body {
     transform: scale(1.05, 1.05);
 }
 
-#smsEntryButton{
+#smsButton{
     background-image: url("../img/smsIcoShort.gif");
     background-repeat: no-repeat;
     background-size: auto;
-    margin-left: 5%;
+    margin-left: 15%;
 }
-
-#smsExitButton{
-    background-image: url("../img/smsIcoShort.gif");
-    background-repeat: no-repeat;
-    background-size: auto;
-    margin-left: 23%;
-}
-
-
-#smsAlarmButton{
-    background-image: url("../img/smsIcoShort.gif");
-    background-repeat: no-repeat;
-    background-size: auto;
-    margin-left: 41%;
-}
-
 
 #navButton {
-    margin-left: 59%;
+    margin-left: 40%;
     background-image: url("../img/smsIcoShort.gif");
     background-repeat: no-repeat;
     background-size: auto;
 }
 
 #callButton {
-    margin-left: 77%;
+    margin-left: 65%;
     background-image: url("../img/telephone.jpg");
     background-repeat: no-repeat;
     background-size: auto;
