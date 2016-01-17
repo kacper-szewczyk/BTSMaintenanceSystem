@@ -8,6 +8,7 @@
     <meta name="keywords" content="HTML,CSS">
     <meta name="author" content="WebCodeGeeks.com">
     <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/smsDatabase.js"></script>
     <script type="text/javascript" src="../js/sms.js"></script>
     <script type="text/javascript" src="../cordova.js"></script>
     <script type="text/javascript" src="../../plugins/cordova-plugin-sms/www/SMS.js"></script>
@@ -34,8 +35,20 @@
     </div>
     <div id="messageDiv">
         <div id="messageInvocation"> TREŚĆ WIADOMOŚCI</div>
-        <textarea name="messageText" id="message" rows="10">
-        </textarea>
+        <textarea name="messageText" id="message" rows="10"></textarea>
+        <div id="messageFooterDiv">
+            <form id="typeOfTemplateForm">
+                <select name="URL" onchange="window.location.href=this.form.URL.options[this.form.URL.selectedIndex].value" id="typeOfTemplateSelect">
+                    <option value="javascript:void(0)" id="changingText"> </option>
+                    <option value="javascript:void(0)">Numer stacji</option>
+                    <option value="javascript:void(0)">Numer NetWorks</option>
+                    <option value="javascript:void(0)">Numer PTC</option>
+                    <option value="javascript:void(0)">Numer PTK</option>
+                </select>
+            </form>
+            <button id="saveSmsButton">Zapisz zmiany</button>
+        </div>
+
     </div>
     <div id="number">
         <div id="numberInvocation"> NUMER ODBIORCY</div>
