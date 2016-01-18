@@ -192,5 +192,6 @@ div#number {
     display: inline-flex;
     overflow: auto;
     position: relative;
-    width: 100%;
+    width: 70%;
+    margin-left: 30%;
 }

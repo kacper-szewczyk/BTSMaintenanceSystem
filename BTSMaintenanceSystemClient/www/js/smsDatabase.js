@@ -1,10 +1,12 @@
 
-var nameOfDatabase = 'Messages';
+var nameOfDatabase = 'MessagesAndNumber';
 var db;
-var entryMessage = 'Wchodzę na stację';
-var exitMessage = 'Wychodzę ze stację';
-var alarmMessage = 'Alarm';
-var telephoneNumber = "48693112193";
+var entryMessage = '';
+var exitMessage = '';
+var alarmMessage = '';
+var telephoneNumber = "";
+
+var nameOfDatabaseFile = 'smsDB';
 
 var tableOfMapping = ['#Nr_Stacji','#Nr_NetWorks','#Nr_PTC','#Nr_PTK'];
 
@@ -23,47 +25,110 @@ function sendSms(number, message) {
     }
 }
 
+function cleanDatabase() {
+    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db.transaction(function (tx) {
+        var sentence = 'DROP TABLE '.concat(nameOfDatabase,';');
+        tx.executeSql(sentence, [], function (tx, results) {
+            var len = results.rows.length, i;
+            msg = "<p>Found rows: " + len + "</p>";
+            console.log(msg);
+
+            for (i = 0; i < len; i++) {
+                console.log(results.rows.item(i).sentence);
+            }
+
+        }, null);
+    });
+}
 
 function checkDatabase() {
-    db = window.openDatabase("SmsDB", "1.0", "Smses", 200000);
-    db.transaction(checkDB, errorCB, successCB);
+    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db.transaction(function (tx) {
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,';');
+        tx.executeSql(sentence, [], function (tx, results) {
+            var len = results.rows.length, i;
+            msg = "<p>Found rows: " + len + "</p>";
+            console.log(msg);
+
+            for (i = 0; i < len; i++) {
+                console.log(results.rows.item(i).sentence);
+            }
+
+        }, null);
+    });
+
+    //db.transaction(getElems, errorCB, successCB);
+}
+
+function initializeDatabase() {
+    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db.transaction(function (tx) {
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,';');
+        tx.executeSql(sentence, [], function (tx, results) {
+            var len = results.rows.length;
+            msg = "<p>Found rows: " + len + "</p>";
+            console.log(msg);
+        }, function(tx) {
+            var sentence = 'CREATE TABLE IF NOT EXISTS '.concat(nameOfDatabase);
+            sentence = sentence.concat(' (id INTEGER PRIMARY KEY AUTOINCREMENT, typeOfData TEXT NOT NULL, sentence TEXT NOT NULL)',';');
+            tx.executeSql(sentence);
+            sentence = 'INSERT INTO '.concat(nameOfDatabase,' (typeOfData, sentence) VALUES ("Wejsciowka", "Wchodzę na stację")',';');
+            tx.executeSql(sentence);
+            sentence = 'INSERT INTO '.concat(nameOfDatabase,' (typeOfData, sentence) VALUES ("Wyjsciowka", "Wychodzę na stację")',';');
+            tx.executeSql(sentence);
+            sentence = 'INSERT INTO '.concat(nameOfDatabase,' (typeOfData, sentence) VALUES ("Alarm", "Alarm")',';');
+            tx.executeSql(sentence);
+            sentence = 'INSERT INTO '.concat(nameOfDatabase,' (typeOfData, sentence) VALUES ("Numer", "48693112193")',';');
+            tx.executeSql(sentence);
+        });
+
+    });
 }
 
 function checkDB(tx) {
-    var sentence = 'DROP TABLE '.concat(nameOfDatabase);
-    tx.executeSql(sentence,[],testDBSuccess,testDBerror);
-    sentence = 'SELECT * FROM '.concat(nameOfDatabase);
+    //var sentence = 'DROP TABLE '.concat(nameOfDatabase);
+    //tx.executeSql(sentence);
+    var sentence = 'SELECT * FROM '.concat(nameOfDatabase,';');
     tx.executeSql(sentence,[],testDBSuccess,testDBerror);
 
 }
-//create table and insert records
-function defaultDB(tx) {
-    var sentence = 'CREATE TABLE IF NOT EXISTS '.concat(nameOfDatabase);
-    sentence = sentence.concat(' (id INTEGER PRIMARY KEY AUTOINCREMENT, type TEXT NOT NULL, sentence TEXT NOT NULL)');
-    tx.executeSql(sentence);
-    sentence = 'INSERT INTO '.concat(nameOfDatabase,'(type,sentence) VALUES ("Wejsciowka ", "Wchodzę na stację")');
-    tx.executeSql(sentence);
-    sentence = 'INSERT INTO '.concat(nameOfDatabase,'(type,sentence) VALUES ("Wyjsciowka ", "Wychodzę na stację")');
-    tx.executeSql(sentence);
-    sentence = 'INSERT INTO '.concat(nameOfDatabase,'(type,sentence) VALUES ("Alarm", "Alarm")');
-    tx.executeSql(sentence);
-    sentence = 'INSERT INTO '.concat(nameOfDatabase,'(type,sentence) VALUES ("Numer", "48693112193")');
-    tx.executeSql(sentence);
-    //tx.executeSql("UPDATE Messages SET sentence = 'Edited text' WHERE id = 1");
+function getElems(tx) {
+    var sentence = 'SELECT * FROM '.concat(nameOfDatabase,';');
+    tx.executeSql(sentence,[],testDBSuccess,testDBerror);
+}
 
+function initializeVariables() {
+    getEntryText();
+    getTelephoneNumber();
+}
+
+function defaultDB(tx) {
+    //if()
+    var sentence = 'CREATE TABLE IF NOT EXISTS '.concat(nameOfDatabase);
+    sentence = sentence.concat(' (id INTEGER PRIMARY KEY AUTOINCREMENT, typeOfData TEXT NOT NULL, sentence TEXT NOT NULL)',';');
+    tx.executeSql(sentence);
+    sentence = 'INSERT INTO '.concat(nameOfDatabase,' (typeOfData, sentence) VALUES ("Wejsciowka", "Wchodzę na stację")',';');
+    tx.executeSql(sentence);
+    sentence = 'INSERT INTO '.concat(nameOfDatabase,' (typeOfData, sentence) VALUES ("Wyjsciowka", "Wychodzę na stację")',';');
+    tx.executeSql(sentence);
+    sentence = 'INSERT INTO '.concat(nameOfDatabase,' (typeOfData, sentence) VALUES ("Alarm", "Alarm")',';');
+    tx.executeSql(sentence);
+    sentence = 'INSERT INTO '.concat(nameOfDatabase,' (typeOfData, sentence) VALUES ("Numer", "48693112193")',';');
+    tx.executeSql(sentence);
 }
 
 function testDBSuccess(tx, result) {
     console.log('table exist');
     var rows = result.rows;
     if(rows.length == 0) {
-        db = window.openDatabase("SmsDB", "1.0", "Smses", 200000);
+        db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
         db.transaction(defaultDB,errorCB);
     }
 }
 
 function testDBerror(err) {
-    db = window.openDatabase("SmsDB", "1.0", "Smses", 200000);
+    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
     db.transaction(defaultDB,errorCB);
 }
 
@@ -71,85 +136,85 @@ function errorCB(err) {
     alert("Error processing SQL: "+err.code);
 }
 
-//function will be called when process succeed
 function successCB() {
     alert("success!");
-    db = window.openDatabase("SmsDB", "1.0", "Smses", 200000);
+    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
     db.transaction(queryDB,errorCB);
-
 }
+
 function queryDB(tx){
-    console.log("queryDB start");
     var sentence = 'SELECT * FROM '.concat(nameOfDatabase);
     tx.executeSql(sentence,[],querySuccess,errorCB);
-    console.log("queryDB end");
 }
 
 function querySuccess(tx,result){
+    alert("Another success");
     var rows=result.rows;
     for(var i=0;i<rows.length;i++){
         var row = rows.item(i);
-        console.log("type "+row.type +" : "+row.sentence);
-        if(row.type == 'Wejsciowka'){
+        console.log("type "+row.typeOfData +" : "+row.sentence);
+        if(row.typeOfData.localeCompare('Wejsciowka')){
             entryMessage = row.sentence;
             break;
         }
-        else if(row.type == 'Wyjsciowka'){
+        else if(row.typeOfData.localeCompare('Wyjsciowka')){
             exitMessage = row.sentence;
             break;
         }
-        else if(row.type == 'Alarm'){
+        else if(row.typeOfData.localeCompare('Alarm')){
             alarmMessage = row.sentence;
             break;
         }
-        else if(row.type == 'Numer'){
-            telephoneNumber = row.sentence;
+        else if(row.typeOfData.localeCompare('Numer')){
+            telephoneNumber = '+'.concat(row.sentence);
+            console.log(telephoneNumber);
             break;
         }
+
     }
 
 }
 
 function getEntryText() {
-    db = window.openDatabase("SmsDB", "1.0", "Smses", 200000);
-    db.transaction(getEntryMessage(), errorCB());
+    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db.transaction(function (tx) {
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,' WHERE id=1;');
+        tx.executeSql(sentence, [], function (tx, results) {
+            entryMessage = results.rows.item(0).sentence;
+            document.getElementById('message').value = entryMessage;
+        })
+    });
 }
 
 function getExitText() {
-    db = window.openDatabase("SmsDB", "1.0", "Smses", 200000);
-    db.transaction(getExitMessage(), errorCB());
+    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db.transaction(function (tx) {
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,' WHERE id=2;');
+        tx.executeSql(sentence, [], function (tx, results) {
+            exitMessage = results.rows.item(0).sentence;
+            document.getElementById('message').value = exitMessage;
+        })
+    });
 }
 
 function getAlarmText() {
-    db = window.openDatabase("SmsDB", "1.0", "Smses", 200000);
-    db.transaction(getAlarmMessage(), errorCB());
+    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db.transaction(function (tx) {
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,' WHERE id=3;');
+        tx.executeSql(sentence, [], function (tx, results) {
+            alarmMessage = results.rows.item(0).sentence;
+            document.getElementById('message').value = alarmMessage;
+        })
+    });
 }
 
 function getTelephoneNumber() {
-    db = window.openDatabase("SmsDB", "1.0", "Smses", 200000);
-    db.transaction(getNumber(), errorCB());
-}
-
-function getEntryMessage(tx) {
-    var sentence = 'SELECT * FROM '.concat(nameOfDatabase);
-    sentence = sentence.concat(' WHERE type="Wejsciowka"');
-    tx.executeSql(sentence,[],querySuccess,errorCB);
-}
-
-function getExitMessage(tx) {
-    var sentence = 'SELECT * FROM '.concat(nameOfDatabase);
-    sentence = sentence.concat(' WHERE type="Wyjsciowka"');
-    tx.executeSql(sentence,[],querySuccess,errorCB);
-}
-
-function getAlarmMessage(tx) {
-    var sentence = 'SELECT * FROM '.concat(nameOfDatabase);
-    sentence = sentence.concat(' WHERE type="Alarm"');
-    tx.executeSql(sentence,[],querySuccess,errorCB);
-}
-
-function getNumber(tx) {
-    var sentence = 'SELECT * FROM '.concat(nameOfDatabase);
-    sentence = sentence.concat(' WHERE type="Number"');
-    tx.executeSql(sentence,[],querySuccess,errorCB);
+    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db.transaction(function (tx) {
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,' WHERE id=4;');
+        tx.executeSql(sentence, [], function (tx, results) {
+            telephoneNumber = results.rows.item(0).sentence;
+            document.getElementById("telephoneNumber").value = telephoneNumber;
+        })
+    });
 }
