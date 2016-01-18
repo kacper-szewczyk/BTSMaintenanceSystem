@@ -15,8 +15,8 @@ $(document).ready(function() {
                         alert("Zły numer");
                     }
                     else {
-                        db = window.openDatabase("SmsDB", "1.0", "Smses", 200000);
-                        db.transaction(updateNumber, errorCB);
+                        updateNumber();
+                        telephoneNumber = value;
                     }
                 });
 
@@ -83,20 +83,23 @@ $(document).ready(function() {
 });
 
 function updateMessage(){
-
     db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
-    db.transaction(updateRecord, errorCB);
+    db.transaction(function (tx) {
+        var messageText = document.getElementById('message').value;
+        var sentence = "UPDATE ".concat(nameOfDatabase, " SET sentence = '", messageText, "' WHERE id = ", typeOfMessage);
+        tx.executeSql(sentence, [], function (tx) {
+            console.log("Udało się zmienic wiadomość");
+        }, null);
+    });
 }
 
-function updateRecord(tx){
-    var message = document.getElementById('message').value;
-    var sentence = "UPDATE ".concat(nameOfDatabase, " SET sentence = '", message, "' WHERE id = ", typeOfMessage);
-    console.log(sentence);
-    tx.executeSql(sentence, [],querySuccess,errorCB);
-}
-
-function updateNumber(tx){
-    var value = document.getElementById("telephoneNumber").value;
-    var sentence = "UPDATE ".concat(nameOfDatabase, " SET sentence = '", value, "' WHERE id = ", 4);
-    tx.executeSql(sentence, [],querySuccess,errorCB);
+function updateNumber(){
+    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db.transaction(function (tx) {
+        var number = document.getElementById("telephoneNumber").value;
+        var sentence = "UPDATE ".concat(nameOfDatabase, " SET sentence = '", number, "' WHERE id = 4");
+        tx.executeSql(sentence, [], function (tx) {
+            console.log("Udało się zmienic numer");
+        }, null);
+    });
 }

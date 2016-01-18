@@ -218,3 +218,44 @@ function getTelephoneNumber() {
         })
     });
 }
+
+
+function getEntryTextWithoutChanging() {
+    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db.transaction(function (tx) {
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,' WHERE id=1;');
+        tx.executeSql(sentence, [], function (tx, results) {
+            entryMessage = results.rows.item(0).sentence;
+        })
+    });
+}
+
+function getExitTextWithoutChanging() {
+    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db.transaction(function (tx) {
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,' WHERE id=2;');
+        tx.executeSql(sentence, [], function (tx, results) {
+            exitMessage = results.rows.item(0).sentence;
+        })
+    });
+}
+
+function getAlarmTextWithoutChanging() {
+    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db.transaction(function (tx) {
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,' WHERE id=3;');
+        tx.executeSql(sentence, [], function (tx, results) {
+            alarmMessage = results.rows.item(0).sentence;
+        })
+    });
+}
+
+function getTelephoneNumberWithoutChanging() {
+    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db.transaction(function (tx) {
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,' WHERE id=4;');
+        tx.executeSql(sentence, [], function (tx, results) {
+            telephoneNumber = results.rows.item(0).sentence;
+        })
+    });
+}

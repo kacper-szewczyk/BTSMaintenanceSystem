@@ -16,22 +16,22 @@ $(document).ready(function() {
 });
 
 function sendEntrySms() {
-    getTelephoneNumber();
-    getEntryText();
+    getTelephoneNumberWithoutChanging();
+    getEntryTextWithoutChanging();
     sendSms(telephoneNumber,entryMessage);
 }
 
 
 function sendExitSms() {
-    getTelephoneNumber();
-    getExitText();
+    getTelephoneNumberWithoutChanging();
+    getExitTextWithoutChanging();
     sendSms(telephoneNumber,exitMessage);
 }
 
 
 function sendAlarmSms() {
-    getTelephoneNumber();
-    getAlarmText();
+    getTelephoneNumberWithoutChanging();
+    getAlarmTextWithoutChanging();
     sendSms(telephoneNumber,alarmMessage);
 }
 
