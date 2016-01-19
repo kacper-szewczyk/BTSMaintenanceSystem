@@ -100,6 +100,8 @@ function getElems(tx) {
 
 function initializeVariables() {
     getEntryText();
+    getExitText();
+    getAlarmText();
     getTelephoneNumber();
 }
 

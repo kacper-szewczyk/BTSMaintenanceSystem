@@ -84,4 +84,17 @@ div#paramsId b {
     float: right;
 }
 
+#get_position_button {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    height: 10%;
+    background-color: #00a8ff;
+    color: #E4E4E4;
+    border: none;
+}
 
+#geolocation {
+    color: #ffa300;
+    margin-left: 5%;
+}

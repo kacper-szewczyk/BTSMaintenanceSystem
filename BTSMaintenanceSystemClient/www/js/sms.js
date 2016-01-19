@@ -2,10 +2,7 @@ var typeOfMessage = 1;
 
 $(document).ready(function() {
     var SearchModule = (function () {
-        //cleanDatabase();
-        //checkDatabase();
         initializeDatabase();
-        //checkDatabase();
         initializeVariables();
         return {
             init: function () {
