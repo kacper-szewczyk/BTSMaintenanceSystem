@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.33pt}
+\beamer@sectionintoc {1}{Ambitne pocz\IeC {\k a}tki}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Wst\IeC {\k e}pne za\IeC {\l }o\IeC {\.z}enia}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Brutalna rzeczywisto\IeC {\'s}\IeC {\'c}}{4}{0}{1}
+\beamer@sectionintoc {2}{Produkt}{22}{0}{2}
+\beamer@sectionintoc {3}{Plany na przysz\IeC {\l }o\IeC {\'s}\IeC {\'c}}{23}{0}{3}
