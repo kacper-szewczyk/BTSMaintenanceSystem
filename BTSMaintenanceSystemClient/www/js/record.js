@@ -68,9 +68,10 @@ function makeCall() {
 }
 
 function fillMessageWithData(message) {
-    message = replaceElem(message,tableOfMapping[0],'stacja');
-    message = replaceElem(message,tableOfMapping[1],'netWorks');
-    message = replaceElem(message,tableOfMapping[2],'ptc');
-    message = replaceElem(message,tableOfMapping[3],'ptk');
+    console.log(actualRecord);
+    message = replaceElem(message,tableOfMapping[0], actualRecord.nrStacji);
+    message = replaceElem(message,tableOfMapping[1], actualRecord.nrNetWorks);
+    message = replaceElem(message,tableOfMapping[2], actualRecord.nrPTC);
+    message = replaceElem(message,tableOfMapping[3], actualRecord.nrPTK);
     return message;
 }

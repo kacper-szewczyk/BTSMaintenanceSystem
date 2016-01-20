@@ -4,7 +4,7 @@ var DEFAULT_SIZE = 5000000; // max to avoid popup in safari/ios
 var nameOfDatabaseFile = "recordDB";
 var nameOfDatabase = "Bts";
 var records;
-
+var actualRecord;
 
 function getRecordsFromDatabase(searchPhrase, filteringElem) {
     var searchSentence = searchPhrase;
@@ -192,10 +192,11 @@ function initializeRecordPage() {
             msg = "Found rows: " + len;
             console.log(msg);
             records = results.rows;
-            var record = records.item(0);
-            var tableText = createRecord(record);
+            actualRecord = records.item(0);
+            //actualRecord = record;
+            var tableText = createRecord(actualRecord);
             $('#bannerId').append(tableText);
-            $('#main').append(createMoreInfo(record));
+            $('#main').append(createMoreInfo(actualRecord));
         },function(){alert("No jarosław");});
     });
 }
