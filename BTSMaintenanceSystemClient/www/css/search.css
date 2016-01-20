@@ -130,7 +130,7 @@ tr {
     color: #00a8ff;
 }
 
-button#record {
+.record {
     width: 100%;
     background: transparent;
     border-bottom-color: #00a8ff;
@@ -138,17 +138,17 @@ button#record {
 
 
 .imageDiv {
-     text-align: left;
+    text-align: left;
  }
 
-.towerIco {
+.ico {
     display: flex;
     float: left;
     transform: scale(0.8,0.8);
 }
 
 .paramsId {
-    width: 60%;
+    width: 70%;
     display: block;
     float: left;
     color: #ffa300;

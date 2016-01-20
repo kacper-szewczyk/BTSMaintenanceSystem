@@ -1,12 +1,12 @@
 
-var nameOfDatabase = 'MessagesAndNumber';
-var db;
+var nameOfDatabaseForSmses = 'MessagesAndNumber';
+
 var entryMessage = '';
 var exitMessage = '';
 var alarmMessage = '';
 var telephoneNumber = "";
 
-var nameOfDatabaseFile = 'smsDB';
+var nameOfDatabaseFileForSmses = 'smsDB';
 
 var tableOfMapping = ['#Nr_Stacji','#Nr_NetWorks','#Nr_PTC','#Nr_PTK'];
 
@@ -26,9 +26,9 @@ function sendSms(number, message) {
 }
 
 function cleanDatabase() {
-    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db = window.openDatabase(nameOfDatabaseFileForSmses , "1.0", "Smses", 200000);
     db.transaction(function (tx) {
-        var sentence = 'DROP TABLE '.concat(nameOfDatabase,';');
+        var sentence = 'DROP TABLE '.concat(nameOfDatabaseForSmses ,';');
         tx.executeSql(sentence, [], function (tx, results) {
             var len = results.rows.length, i;
             msg = "<p>Found rows: " + len + "</p>";
@@ -43,9 +43,9 @@ function cleanDatabase() {
 }
 
 function checkDatabase() {
-    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db = window.openDatabase(nameOfDatabaseFileForSmses , "1.0", "Smses", 200000);
     db.transaction(function (tx) {
-        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,';');
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabaseForSmses ,';');
         tx.executeSql(sentence, [], function (tx, results) {
             var len = results.rows.length, i;
             msg = "<p>Found rows: " + len + "</p>";
@@ -62,24 +62,24 @@ function checkDatabase() {
 }
 
 function initializeDatabase() {
-    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db = window.openDatabase(nameOfDatabaseFileForSmses , "1.0", "Smses", 200000);
     db.transaction(function (tx) {
-        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,';');
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabaseForSmses ,';');
         tx.executeSql(sentence, [], function (tx, results) {
             var len = results.rows.length;
             msg = "<p>Found rows: " + len + "</p>";
             console.log(msg);
         }, function(tx) {
-            var sentence = 'CREATE TABLE IF NOT EXISTS '.concat(nameOfDatabase);
+            var sentence = 'CREATE TABLE IF NOT EXISTS '.concat(nameOfDatabaseForSmses );
             sentence = sentence.concat(' (id INTEGER PRIMARY KEY AUTOINCREMENT, typeOfData TEXT NOT NULL, sentence TEXT NOT NULL)',';');
             tx.executeSql(sentence);
-            sentence = 'INSERT INTO '.concat(nameOfDatabase,' (typeOfData, sentence) VALUES ("Wejsciowka", "Wchodzę na stację")',';');
+            sentence = 'INSERT INTO '.concat(nameOfDatabaseForSmses ,' (typeOfData, sentence) VALUES ("Wejsciowka", "Wchodzę na stację")',';');
             tx.executeSql(sentence);
-            sentence = 'INSERT INTO '.concat(nameOfDatabase,' (typeOfData, sentence) VALUES ("Wyjsciowka", "Wychodzę na stację")',';');
+            sentence = 'INSERT INTO '.concat(nameOfDatabaseForSmses ,' (typeOfData, sentence) VALUES ("Wyjsciowka", "Wychodzę na stację")',';');
             tx.executeSql(sentence);
-            sentence = 'INSERT INTO '.concat(nameOfDatabase,' (typeOfData, sentence) VALUES ("Alarm", "Alarm")',';');
+            sentence = 'INSERT INTO '.concat(nameOfDatabaseForSmses ,' (typeOfData, sentence) VALUES ("Alarm", "Alarm")',';');
             tx.executeSql(sentence);
-            sentence = 'INSERT INTO '.concat(nameOfDatabase,' (typeOfData, sentence) VALUES ("Numer", "48693112193")',';');
+            sentence = 'INSERT INTO '.concat(nameOfDatabaseForSmses ,' (typeOfData, sentence) VALUES ("Numer", "48693112193")',';');
             tx.executeSql(sentence);
         });
 
@@ -89,20 +89,27 @@ function initializeDatabase() {
 function checkDB(tx) {
     //var sentence = 'DROP TABLE '.concat(nameOfDatabase);
     //tx.executeSql(sentence);
-    var sentence = 'SELECT * FROM '.concat(nameOfDatabase,';');
+    var sentence = 'SELECT * FROM '.concat(nameOfDatabaseForSmses ,';');
     tx.executeSql(sentence,[],testDBSuccess,testDBerror);
 
 }
 function getElems(tx) {
-    var sentence = 'SELECT * FROM '.concat(nameOfDatabase,';');
+    var sentence = 'SELECT * FROM '.concat(nameOfDatabaseForSmses ,';');
     tx.executeSql(sentence,[],testDBSuccess,testDBerror);
 }
 
 function initializeVariables() {
-    getEntryText();
     getExitText();
     getAlarmText();
+    getEntryText();
     getTelephoneNumber();
+}
+
+function initializeVariablesWithoutChanging() {
+    getExitTextWithoutChanging();
+    getAlarmTextWithoutChanging();
+    getEntryTextWithoutChanging();
+    getTelephoneNumberWithoutChanging();
 }
 
 function defaultDB(tx) {
@@ -110,13 +117,13 @@ function defaultDB(tx) {
     var sentence = 'CREATE TABLE IF NOT EXISTS '.concat(nameOfDatabase);
     sentence = sentence.concat(' (id INTEGER PRIMARY KEY AUTOINCREMENT, typeOfData TEXT NOT NULL, sentence TEXT NOT NULL)',';');
     tx.executeSql(sentence);
-    sentence = 'INSERT INTO '.concat(nameOfDatabase,' (typeOfData, sentence) VALUES ("Wejsciowka", "Wchodzę na stację")',';');
+    sentence = 'INSERT INTO '.concat(nameOfDatabaseForSmses ,' (typeOfData, sentence) VALUES ("Wejsciowka", "Wchodzę na stację")',';');
     tx.executeSql(sentence);
-    sentence = 'INSERT INTO '.concat(nameOfDatabase,' (typeOfData, sentence) VALUES ("Wyjsciowka", "Wychodzę na stację")',';');
+    sentence = 'INSERT INTO '.concat(nameOfDatabaseForSmses ,' (typeOfData, sentence) VALUES ("Wyjsciowka", "Wychodzę na stację")',';');
     tx.executeSql(sentence);
-    sentence = 'INSERT INTO '.concat(nameOfDatabase,' (typeOfData, sentence) VALUES ("Alarm", "Alarm")',';');
+    sentence = 'INSERT INTO '.concat(nameOfDatabaseForSmses ,' (typeOfData, sentence) VALUES ("Alarm", "Alarm")',';');
     tx.executeSql(sentence);
-    sentence = 'INSERT INTO '.concat(nameOfDatabase,' (typeOfData, sentence) VALUES ("Numer", "48693112193")',';');
+    sentence = 'INSERT INTO '.concat(nameOfDatabaseForSmses ,' (typeOfData, sentence) VALUES ("Numer", "48693112193")',';');
     tx.executeSql(sentence);
 }
 
@@ -124,13 +131,13 @@ function testDBSuccess(tx, result) {
     console.log('table exist');
     var rows = result.rows;
     if(rows.length == 0) {
-        db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+        db = window.openDatabase(nameOfDatabaseFileForSmses , "1.0", "Smses", 200000);
         db.transaction(defaultDB,errorCB);
     }
 }
 
 function testDBerror(err) {
-    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db = window.openDatabase(nameOfDatabaseFileForSmses , "1.0", "Smses", 200000);
     db.transaction(defaultDB,errorCB);
 }
 
@@ -140,12 +147,12 @@ function errorCB(err) {
 
 function successCB() {
     alert("success!");
-    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db = window.openDatabase(nameOfDatabaseFileForSmses , "1.0", "Smses", 200000);
     db.transaction(queryDB,errorCB);
 }
 
 function queryDB(tx){
-    var sentence = 'SELECT * FROM '.concat(nameOfDatabase);
+    var sentence = 'SELECT * FROM '.concat(nameOfDatabaseForSmses );
     tx.executeSql(sentence,[],querySuccess,errorCB);
 }
 
@@ -178,9 +185,9 @@ function querySuccess(tx,result){
 }
 
 function getEntryText() {
-    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db = window.openDatabase(nameOfDatabaseFileForSmses , "1.0", "Smses", 200000);
     db.transaction(function (tx) {
-        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,' WHERE id=1;');
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabaseForSmses ,' WHERE id=1;');
         tx.executeSql(sentence, [], function (tx, results) {
             entryMessage = results.rows.item(0).sentence;
             document.getElementById('message').value = entryMessage;
@@ -189,9 +196,9 @@ function getEntryText() {
 }
 
 function getExitText() {
-    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db = window.openDatabase(nameOfDatabaseFileForSmses , "1.0", "Smses", 200000);
     db.transaction(function (tx) {
-        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,' WHERE id=2;');
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabaseForSmses ,' WHERE id=2;');
         tx.executeSql(sentence, [], function (tx, results) {
             exitMessage = results.rows.item(0).sentence;
             document.getElementById('message').value = exitMessage;
@@ -200,9 +207,9 @@ function getExitText() {
 }
 
 function getAlarmText() {
-    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db = window.openDatabase(nameOfDatabaseFileForSmses , "1.0", "Smses", 200000);
     db.transaction(function (tx) {
-        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,' WHERE id=3;');
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabaseForSmses ,' WHERE id=3;');
         tx.executeSql(sentence, [], function (tx, results) {
             alarmMessage = results.rows.item(0).sentence;
             document.getElementById('message').value = alarmMessage;
@@ -211,9 +218,9 @@ function getAlarmText() {
 }
 
 function getTelephoneNumber() {
-    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db = window.openDatabase(nameOfDatabaseFileForSmses , "1.0", "Smses", 200000);
     db.transaction(function (tx) {
-        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,' WHERE id=4;');
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabaseForSmses ,' WHERE id=4;');
         tx.executeSql(sentence, [], function (tx, results) {
             telephoneNumber = results.rows.item(0).sentence;
             document.getElementById("telephoneNumber").value = telephoneNumber;
@@ -223,9 +230,9 @@ function getTelephoneNumber() {
 
 
 function getEntryTextWithoutChanging() {
-    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db = window.openDatabase(nameOfDatabaseFileForSmses , "1.0", "Smses", 200000);
     db.transaction(function (tx) {
-        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,' WHERE id=1;');
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabaseForSmses ,' WHERE id=1;');
         tx.executeSql(sentence, [], function (tx, results) {
             entryMessage = results.rows.item(0).sentence;
         })
@@ -233,9 +240,9 @@ function getEntryTextWithoutChanging() {
 }
 
 function getExitTextWithoutChanging() {
-    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db = window.openDatabase(nameOfDatabaseFileForSmses , "1.0", "Smses", 200000);
     db.transaction(function (tx) {
-        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,' WHERE id=2;');
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabaseForSmses ,' WHERE id=2;');
         tx.executeSql(sentence, [], function (tx, results) {
             exitMessage = results.rows.item(0).sentence;
         })
@@ -243,9 +250,9 @@ function getExitTextWithoutChanging() {
 }
 
 function getAlarmTextWithoutChanging() {
-    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db = window.openDatabase(nameOfDatabaseFileForSmses , "1.0", "Smses", 200000);
     db.transaction(function (tx) {
-        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,' WHERE id=3;');
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabaseForSmses ,' WHERE id=3;');
         tx.executeSql(sentence, [], function (tx, results) {
             alarmMessage = results.rows.item(0).sentence;
         })
@@ -253,9 +260,9 @@ function getAlarmTextWithoutChanging() {
 }
 
 function getTelephoneNumberWithoutChanging() {
-    db = window.openDatabase(nameOfDatabaseFile, "1.0", "Smses", 200000);
+    db = window.openDatabase(nameOfDatabaseFileForSmses , "1.0", "Smses", 200000);
     db.transaction(function (tx) {
-        var sentence = 'SELECT * FROM '.concat(nameOfDatabase,' WHERE id=4;');
+        var sentence = 'SELECT * FROM '.concat(nameOfDatabaseForSmses ,' WHERE id=4;');
         tx.executeSql(sentence, [], function (tx, results) {
             telephoneNumber = results.rows.item(0).sentence;
         })

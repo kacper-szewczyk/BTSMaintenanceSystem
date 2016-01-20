@@ -173,7 +173,7 @@ div#number {
 }
 
 #saveSmsButton {
-    float: left;
+    float: right;
     margin-left: 5%;
     width: 50%;
     height: 10%;
@@ -192,6 +192,5 @@ div#number {
     display: inline-flex;
     overflow: auto;
     position: relative;
-    width: 70%;
-    margin-left: 30%;
+    width: 100%;
 }

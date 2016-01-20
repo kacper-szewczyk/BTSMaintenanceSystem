@@ -2,14 +2,10 @@ var recordData;
 $(document).ready(function() {
     var SearchModule = (function () {
         checkDatabase();
-        initializeVariables();
+        initializeVariablesWithoutChanging();
+        initializeRecordPage();
         return {
             init: function () {
-                var record = ["1","2","3asflkj","4","5","6"];
-                var record2 = ["1","2","3asflkj","4","5","6","7","8","Kosik"]
-                recordData = record.concat(record2);
-                $('#bannerId').append(createRecord(record));
-                $('#main').append(createMoreInfo(record2));
 
                 $("#smsEntryButton").click(function(){
                     sendEntrySms();
@@ -20,7 +16,7 @@ $(document).ready(function() {
                 });
 
                 $("#smsAlarmButton").click(function(){
-                    sendEntrySms();
+                    sendAlarmSms();
                 });
 
                 $("#navButton").click(function(){
@@ -50,7 +46,6 @@ function sendExitSms() {
     getTelephoneNumberWithoutChanging();
     getExitTextWithoutChanging();
     var messageToSend = fillMessageWithData(exitMessage);
-    alert(messageToSend);
     sendSms(telephoneNumber,messageToSend);
     alert('Wysłano sms o treści: '.concat(messageToSend));
 }

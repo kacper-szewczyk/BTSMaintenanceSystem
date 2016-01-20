@@ -55,7 +55,7 @@ button#record {
     text-align: left;
 }
 
-#towerIco {
+.ico {
     display: flex;
     float: left;
 }
